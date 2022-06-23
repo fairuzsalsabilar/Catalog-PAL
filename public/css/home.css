@@ -1,0 +1,49 @@
+/* CSS Code */
+
+/* Basic Code */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(244, 245, 249, 1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(244, 245, 249, 1);
+    position :fixed;
+    z-index: 10;
+    padding-top: 25px;
+}
+
+.header-left {
+    float:left;
+}
+
+.header-left .logo {
+    margin-left: 95px;
+}
+
+.header-right {
+    float:right;
+}
+
+/* Btn Log in */
+.header-right .btn-login {
+    display: inline-block;
+    background: rgba(3, 66, 139, 1);
+    border-radius: 5px;
+    padding: 10.5px 14px 13px 15px;
+    margin-right: 95px;
+    width: 97px;
+    height: 40px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.003em;
+}
