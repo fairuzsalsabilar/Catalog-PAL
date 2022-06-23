@@ -1,3 +1,41 @@
+<<<<<<< HEAD:app/Views/layout/footer.php
+=======
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+  </head>
+
+  <body>
+
+    <header id="header" class="fixed-top">
+      <div class="header-left">
+          <a class="logo mr-auto" href="#">
+            <img src="img/logo PAL.png" width="300" height="29.7" alt="">
+          </a>
+      </div>
+    <!-- Btn Login -->
+      <div class="header-right">  
+        <button type="button" class="btn-login btn-primary btn-lg scrollto">Log in</button>
+      </div>
+    </header>
+
+    <!-- Home atas -->
+    <div class="imgMain">
+      <img src="img/foto-home.jpg" width="auto" height="577px">
+    </div>
+
+>>>>>>> 27c633942d7db28ec93f6c4b48fb63af6bedf616:app/Views/home.php
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
