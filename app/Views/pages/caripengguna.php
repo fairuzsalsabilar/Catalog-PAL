@@ -26,15 +26,29 @@
         </div>
     </header>
 
-        <!-- Cari atas-->
+    <!-- Cari atas -->
         <div class="alert alert-primary" role="alert">
-            <p class="text1">DOKUMEN</p>
-            <p class="text2">Berkas Kebutuhan<br>Anda</p>
+            <p class="text1">DOKUMEN</p><br>
+            <p class="text2"><strong>Berkas Kebutuhan<br>Anda</strong></p>
         </div>
 
-        <!-- Home atas -->
-        <div class="imgMain">
-        <img src="img/rectangle.png" width="auto" height="577px">
-        </div>
-</body>
+    <!-- gambar -->
+    <div class="imgMain">
+        <img src="img/rectangle.png">
+    </div>
+
+    <!-- cari -->
+    <form class="row g-3">
+  <div class="col-auto">
+    <label for="staticEmail2" class="visually-hidden">Email</label>
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+  </div>
+  <div class="col-auto">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+  </div>
+</form>
 </html>
