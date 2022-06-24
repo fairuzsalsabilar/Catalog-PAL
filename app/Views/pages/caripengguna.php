@@ -16,7 +16,7 @@
 <body>
     <header id="header" class="fixed-top">
         <div class="header-left">
-            <a class="logo mr-auto" href="#">
+            <a class="logo mr-auto" href="home.php">
                 <img src="img/logo PAL.png" width="300" height="29.7" alt="">
             </a>
         </div>
