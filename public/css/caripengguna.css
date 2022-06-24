@@ -48,29 +48,6 @@ header {
     letter-spacing: 0.003em;
 }
 
-/* .container{
-    float: left;
-    background-color: rgba(3, 66, 139, 1);
-    margin-top: 80px;
-}
-
-.header{
-    position: absolute;
-    background-color: rgba(3, 66, 139, 1);
-    margin-top: 80px;
-    height: 554px;
-    padding: 100px;
-    font-size: 12px;
-    color: white;
-}
-
-.header1{
-    position: absolute;
-    margin-top: 100px;
-    padding: 100px;
-    font-size: 36px;
-    color: white;
-} */
 .alert {
     position: absolute;
     background-color: rgba(3, 66, 139, 1);
