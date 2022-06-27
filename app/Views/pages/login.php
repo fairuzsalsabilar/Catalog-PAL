@@ -1,19 +1,20 @@
-<!-- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login</title> 
 
-    <!-- Bootstrap CSS -->
+     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/login.css">
-</head>
-
+    <link rel="stylesheet" href="css/login.css"> 
+</head>  
+<!-- 
 <body>
 <div class="container-login100" id="form">
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
@@ -49,6 +50,7 @@
 		</div>
 	</div>
 </body>
+ -->
 <!--  
 <body>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
@@ -79,46 +81,46 @@
     </div>
   </div>    
 </div>
-</body> --> -->
+</body> --> 
 
-<!doctype html>
+<!-- <!doctype html> 
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Bootstrap Example</title>
-  </head>
+    
+    <link rel="stylesheet" href="css/login.css">
+  </head> -->
+  
   <body>
 
     <!-- Example Code -->
-    
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-    
+    <div class="tombollogin">
+    <button type="button" class="btn btn-primary btn-lg scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</button>
+    </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message to @mdo</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <label for="recipient-name" class="col-form-label">Username</label>
+                <input type="text" class="form-control" id="username">
               </div>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <label for="message-text" class="col-form-label">Password</label>
+                <input type="text" class="form-control"id="password"></input>
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-primary">Login</button>
           </div>
         </div>
       </div>
@@ -126,6 +128,6 @@
     
     <!-- End Example Code -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> 
   </body>
 </html>
