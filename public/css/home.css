@@ -10,51 +10,29 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    height: 80px;
-    width: 100%;
-    background-color: rgba(244, 245, 249, 1);
-    position :fixed;
-    z-index: 10;
-    padding-top: 25px;
-}
+  /* Navbar */
+  .navbar-brand {
+    margin-top: 25px;
+    margin-left: 102px;
+  }
 
-.header-left {
-    float:left;
-}
+  .tombol {
+    margin-top: 25px;
+    margin-right: 102px;
+  }
 
-.header-left .logo {
-    margin-left: 95px;
-}
+  .home {
+    margin-left: -128px;
+  }
 
-.header-right {
-    float:right;
-}
-
-/* Btn Log in */
-.header-right .btn-login {
-    display: inline-block;
-    background: rgba(3, 66, 139, 1);
-    border-radius: 5px;
-    padding: 10.5px 14px 13px 15px;
-    margin-right: 95px;
-    width: 97px;
-    height: 40px;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.003em;
-}
-
-.imgMain {
+  .imgMain {
     float: right;
-    margin-right: 95px;
-    margin-top: -160px;
-}
+    margin-right: -10px;
+    margin-top: 30px;
+    z-index: 1;
+   }
 
-.btn-cari {
+  .btn-cari {
     float: right;
     margin-top: 100px;
     width=105px; 
@@ -66,16 +44,18 @@ header {
     position: absolute;
     width: 105px;
     height: 105px;
-    margin-left:787px;
-    margin-top: 232px;
+    margin-left:-90px;
+    margin-top: 480px;
 }
 
 .kotak {
     width: 657px;
     height: 271px;
     background: rgba(3, 66, 139, 1);
-    margin-top: 268px;
-    position: relative;
+    margin-top: 200px;
+    margin-left: 98px;
+    position: absolute;
+    z-index: 1;
 }
 
 .kotak h6{
@@ -96,139 +76,387 @@ header {
     letter-spacing: 0.003em;
 }
 
-.garis {
-    position: absolute;
-    margin-top: 300px;
-    width: 249.5px;
-    height: 3px;
-    color: rgba(178, 203, 239, 1);
-    border: 3px;
+.el1{
+    height: 5px;
+    width: 250px;
+    background: #B2CBEF;
 }
 
-.bundarkiri {
-    background: rgba(178, 203, 239, 1);
-    margin-top: 310px;
-    margin-left: 440px;
+.el2{
     width: 70px;
     height: 70px;
-    position: absolute;
-    border-radius: 40px;
+    border-radius: 50%;
+    background: #B2CBEF;
 }
 
-.bundarkiri1 {
-    background: rgba(178, 203, 239, 1);
-    margin-top: 286px;
-    margin-left: 530px;
+.el3{
     width: 114px;
     height: 114px;
-    position: absolute;
-    border-radius: 80px;
+    border-radius: 50%;
+    background: #B2CBEF;
 }
 
-.bundartengah {
-    background: rgba(3, 66, 139, 1);
+.el4{
     width: 169px;
     height: 169px;
-    position: absolute;
-    border-radius: 110px;
-    margin-top: 260px;
-    margin-left: 665px;
+   
+    border-radius: 50%;
+    background: rgba(3, 66, 139, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.infoJumlah {
+.el4 span.p{
+    font-size: 12; 
+}
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.deskripsi {
     color: white;
-    margin-top: 45px;
-    margin-left: 18px;
-    position: absolute;
-    font-size: 40px;
-    font-style: bold;
+    margin-top: 28px;
 }
 
-.jumlah {
-    color: white;
-    margin-top: 100px;
-    margin-left: 59px;
-    position: absolute;
-    font-size: 16px;
-    font-style: normal;
+.deskripsi p {
+    margin-left: 30px;
 }
 
-.bundarkanan {
-    background: rgba(178, 203, 239, 1);
-    margin-top: 310px;
-    margin-left: 990px;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    border-radius: 40px;
-}
-
-.bundarkanan1 {
-    background: rgba(178, 203, 239, 1);
-    margin-top: 286px;
-    margin-left: 855px;
-    width: 114px;
-    height: 114px;
-    position: absolute;
-    border-radius: 80px;
-}
-
-.kotakbawah {
-    position: absolute;
+.container {
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
     width: 100%;
-    height: 246px;
-    left: 0px;
-    top: 2202px;
-
-background: #03428B;
 }
 
-.prosedur {
-    padding-top: 600px;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
+.pencarian {
+    margin-top: 10%;;
+}
+
+.kotakcari {
+    width: 100%;
+    height: 740px;
+    margin-top: -90px;
+    margin-bottom: 10px;
+    background: #CBE0FF;
+    position: absolute;
+    margin-left: -15px;
+}
+
+.kiri {
+    margin-left: 80px;
+    margin-top: 154px;
+    position: relative;
+}
+
+.kanan {
+    justify-content: end;
+    margin-left: 680px;
+    margin-top: -120px;
+}
+
+.kanan .penjelasan {
+    width: 55%;
+    margin-top: -372px;
+}
+
+.penjelasan h6 {
+    position: relative;
     color: rgba(3, 66, 139, 1);
-    font-style: normal;
+    margin-top:-100px;
+}
+
+.penjelasan a {
+    padding-top: 100px;
+    position: relative;
+    top: 8px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.003em;
+    color: rgba(3, 66, 139, 1);
+}
+
+.penjelasan p {
+    position: absolute;
+    width: 455px;
+    height: 20px;
+    top: -220px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.003em;
+    color: #949494;
+}
+
+.cari {
+    width: 700px;
+    height: 62px;
+    color: rgba(3, 66, 139, 1);
+}
+
+.btn-src {
+    width: 120px;
+    height: 62px;
+    margin-left: 20px;
+}
+
+.kiri{
+   width: 40%;
+
+}
+
+p.capt{
+    color:#949494;
+    
+}
+
+.kolomCari{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    width: 100%;
+    height: 217px;
+    background: rgba(255, 255, 255, 0.84);
+    border-radius: 5px;
+    flex-direction: column;
+    position: relative;
+}
+
+.pilihanKategori{
+    margin: 30px;
+   
+}
+
+.pilihanKategori .btn{
+    margin: 6px;
+    width: 126.32px;
+    height: 40px;
+    padding: 8px;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.carii{
+    width: 91%;
+    margin-left: 30px;
+    display: flex;
+    color: #03428B;
+}
+
+.tlsnprosedur{
     font-weight: 600;
     font-size: 40px;
-    line-height: 50px;
     text-align: center;
     letter-spacing: 0.003em;
+    color: #03428B;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .heading h2 {
-    font-weight: normal;
-  }
-  
-  .langkah {
-    float: left;
-    width: 25%;
-  }
-  
-  .langkah-icon {
-    position: relative;
-  }
-  
-  .langkah-icon p {
     position: absolute;
-    top: 115%;
-    width: 100%;
-    color: rgba(3, 66, 139, 1);;
-  }
-  
-  .txt-contents {
-    width: 80%;
-    display: inline-block;
-    margin-top: 20%;
-    font-size: 15px;
-    color: rgba(148, 148, 148, 1);
+    margin-bottom: 100px;
+    margin-top: 300px;
+}
 
+.tlsnprosedur p {
+    margin-left: 35%;
+    margin-top: 55%;
+}
+
+.dasar-warna{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1520px;
+    height: 246px;
+    left: 0px;
+    top: 2702px;
+    background: #03428B;
+    align-items: center;
+}
+
+.kotakBwh{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 250px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%; /*750*/
+     
+}
+
+.atas{
+    width: 100%;
+    height: 63px;
+    background: rgba(178, 203, 239, 1);
+}
+
+.prosedur{
+    width: 23%;
+    height: 500px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: -28%;
+    padding-bottom: 20px;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.logo img{
+    width: 30%;
+    margin: 20px;
+}
+
+.logo h3{
+    color: #03428B;
+    margin-bottom: 8%;
+}
+
+.logo p{
+    color: rgba(178, 203, 239, 1);
+    text-align: center;
+}
+
+.angka{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #03428B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 85px;
+    margin-top: 38%;
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 28px;
+}
+
+.angka p {
+    margin-top: 17%;
+}
+
+.kecil img{
+    width: 100px;
+}
+
+footer{
+    background: #03428B;
+    text-align: center;
+    margin-top: -8%;
+    height: 79px;
+}
+
+footer p {
+    position: absolute;
+    width: 335px;
+    height: 28px;
+    left: 590px;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.003em;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+  /* Tablet Version */
+  @media (max-width: 768px) and (max-width: 991.98px) {
+    .navbar-brand {
+        margin-top: 25px;
+        margin-left: 43px;
+      }
+    
+  }
+
+  /* Small Device Version */
+  @media (max-width: 576px) and (max-width: 767.98px) {
+    .navbar-brand {
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 200px;
+        height: auto;
+      }
+    
+      .tombol {
+        margin-top: 25px;
+        margin-right: 20px;
+      }
+
+      .btn-cari {
+        float: right;
+        margin-top: 110px;
+        width=105px; 
+        height=105px;
+    }
+    
+    .btn-search {
+        background: rgba(3, 66, 139, 1);
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        margin-left:-150px;
+        margin-top: 245px;
+    }
+  }
+
+  /* Very Small */
+  @media (max-width: 575.98px) {
+    .navbar-brand {
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 200px;
+        height: auto;
+      }
+    
+      .tombol {
+        margin-top: 25px;
+        margin-right: 20px;
+      }
+
+      .btn-cari {
+        float: right;
+        margin-top: 100px;
+        width=105px; 
+        height=105px;
+    }
+    
+    .btn-search {
+        background: rgba(3, 66, 139, 1);
+        position: absolute;
+        width: 105px;
+        height: 105px;
+        margin-left:-110px;
+        margin-top: 245px;
+    }
   }
