@@ -1,0 +1,114 @@
+CSS Code
+
+/* Basic Code */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F5F9;
+}
+
+nav{
+    background-color: rgba(244, 245, 249, 1);
+    display: flex;
+    justify-content:space-between;
+}
+
+.btn{
+    float: right;
+    text-decoration: none;
+    color: white;
+    background: #03428B;
+}
+
+.collapse .btn{
+    float: right;
+}
+
+.heder{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(244, 245, 249, 1);
+    position :fixed;
+    z-index: 10;
+}
+
+.header-left {
+    float:left;
+}
+
+.header-left .logo {
+    margin-left: 95px;
+}
+
+.header-right {
+    float:right;
+}
+
+.header-right .btn-login {
+    display: inline-block;
+    background: #03428B;
+    border-radius: 5px;
+    padding: 10.5px 14px 13px 15px;
+    margin-right: 95px;
+    width: 97px;
+    height: 40px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.003em;
+}
+
+.judul {
+    position: absolute;
+    background: #03428B;
+    margin-top: 60px;;
+    border-radius: 0px;
+    height: 555px;
+    width: 608px;
+    color: white;
+    padding-left: 91px;
+    padding-top: 64px;
+}
+
+.imgMain{
+    float: right;
+    margin-top: 60px;
+    width: 832px;
+    height: 554px;
+}
+
+.form-control{
+    width: 30%;
+    border-radius: 5px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.form{
+    color: #03428B;
+    font-size: 14px;
+}
+
+.form p{
+    position: relative;
+}
+
+/* .input{
+    position: absolute;
+} */
+
+.row{
+    position: relative;
+    width: 100%;
+    margin-left: 50px;
+}

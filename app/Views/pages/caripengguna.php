@@ -17,7 +17,7 @@
     <header id="header">
     <div class="container navbar">
         <div class="header-left">
-            <a class="logo mr-auto" href="https://hcm.pal.co.id/login">
+            <a class="logo mr-auto" href="#">
                 <img src="img/logo PAL.png" width="300" height="29.7" alt="">
             </a>
         </div>
@@ -25,71 +25,64 @@
         <div class="header-right">  
             <button type="button" class="btn-login btn-primary btn-lg scrollto">Log in</button>
         </div>
+        <!-- <div class="tombollogin">
+    <button type="button" class="btn btn-primary btn-lg scrollto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Username</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password</label>
+                <input type="text" class="form-control"id="password"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
     </div> 
     </header>
-    <!-- <div class="container navbar">
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="header-left">
-                <a class="logo mr-auto" href="home.php">
-                    <img src="img/logo PAL.png" width="300" height="29.7" alt="">
-                </a>
-            </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-                <button class="btn" type="submit">Log In</button>
-            </div>
-        </nav>
-	</div> -->
-
-    <!-- Cari atas -->
-    <!-- 
-    <div class="container-fluid heder">
-        <div class="judul">
-            <p>DOKUMEN</p>
-            <h1>Berkas Kebutuhan<br>Anda</h1>
-        </div>
-        <div class="hederpict">
-            <img src="img/rectangle.png" class="img-fluid " alt="">
-            <div class="elemen1">
-            </div>
-            <div class="find">
-                <div class="elemen2">
-                    <img src="img/Vector.png" alt="">
-                </div>
-
-            </div> 
-        </div>
-    </div> -->
+    
     <div class="container destinasi">
         <div class="judul">
             <p>DOKUMEN</p>
             <h1><strong>Berkas Kebutuhan<br>Anda</strong></h1>
         </div>
-    <div class="imgMain">
-        <img src="img/rectangle.png">
+        <div class="imgMain">
+            <img src="img/rectangle.png">
+        </div>
     </div>
-</div>
 
     <!-- form -->
 <div class="container destinasi">
     <div class="pilihan">
         <div class="search">
-            <input class="form-control me-2 cari" type="search" placeholder="Masukkan kata kunci pencarian Anda disini" aria-label="Search">
-            <button type="button" class="btn lebar">Cari</button>
+            <input class="form-control me-2 cari" type="search"aria-label="Search">
+            <button type="button" class="btn">Cari</button>
         </div>
-            <div class="multiple">
-                <button type="button" class="btn lebar">Label</button>
-                <button type="button" class="btn lebar">Judul Dokumen</button>
-                <button type="button" class="btn lebar">Judul Proyek</button>
-                <button type="button" class="btn lebar">Tahun</button>
-            </div>
+        <div class="multiple">
+            <button type="button" class="lebar">Label</button>
+            <button type="button" class="lebar">Judul Dokumen</button>
+            <button type="button" class="lebar">Judul Proyek</button>
+            <button type="button" class="lebar">Tahun</button>          </div>
         </div>
     </div>
 </div>
-    </div>
 </body>
 <footer id="footer">
     <div class="container scd-foot padding-top-small padding-bottom-smaller">
