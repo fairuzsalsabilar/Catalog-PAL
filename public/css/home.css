@@ -21,6 +21,22 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: 102px;
   }
 
+  .tombollogin .btn{
+    font-family: "Roboto", sans-serif;
+    display: inline-block;
+    background: rgba(3, 66, 139, 1);
+    border-radius: 5px;
+    margin-right: 80px; 
+    margin-top: 25px;
+    width: 97px;
+    height: 40px;
+    
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.003em;
+}
+
   .home {
     margin-left: -128px;
   }
@@ -35,8 +51,8 @@ h1,h2,h3,h4,h5,h6 {
   .btn-cari {
     float: right;
     margin-top: 100px;
-    width=105px; 
-    height=105px;
+    width:105px; 
+    height:105px;
 }
 
 .btn-search {
@@ -416,8 +432,8 @@ footer p {
       .btn-cari {
         float: right;
         margin-top: 110px;
-        width=105px; 
-        height=105px;
+        width:105px; 
+        height:105px;
     }
     
     .btn-search {
@@ -447,8 +463,8 @@ footer p {
       .btn-cari {
         float: right;
         margin-top: 100px;
-        width=105px; 
-        height=105px;
+        width:105px; 
+        height:105px;
     }
     
     .btn-search {
