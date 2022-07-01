@@ -14,22 +14,6 @@
     <link rel="stylesheet" href="css/caripengguna.css">
 </head>
 <body>
-<!-- <nav class="navbar navbar-expand-lg bg-light">
-    <div class="header-left">
-            <a class="logo mr-auto" href="#">
-                <img src="img/logo PAL.png" width="300" height="29.7" alt="">
-            </a>
-        </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul>
-              <button class="btn" type="submit">Log In</button>
-          </div>
-        </div>
-    </nav> -->
     <header id="header">
     <div class="container navbar">
         <div class="header-left">
