@@ -12,7 +12,7 @@ nav{
     justify-content:space-between;
 }
 
-.btn{
+/* .btn {
     float: right;
     display: inline-block;
     color: white;
@@ -21,7 +21,9 @@ nav{
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
+} */
+
+
 
 .collapse .btn{
     float: right;
@@ -53,16 +55,15 @@ header {
     float:right;
 }
 
-.header-right .btn-login {
+.tombollogin .btn{
+    font-family: "Roboto", sans-serif;
     display: inline-block;
-    background: #03428B;
+    background: rgba(3, 66, 139, 1);
     border-radius: 5px;
-    padding: 10.5px 14px 13px 15px;
-    margin-right: 95px;
+    margin-right: 80px; 
+    margin-top: 25px;
     width: 97px;
     height: 40px;
-    gap: 10px;
-    font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
