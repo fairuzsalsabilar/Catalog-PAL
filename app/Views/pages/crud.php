@@ -20,40 +20,28 @@
         <a class="navbar-brand" href="#">
           <img src="img/logo PAL.png" width="300px" height="29.7px">
         </a>
-        <div class="tombolinput ml-auto">
-          <a class="nav-item nav-link btn btn-outline-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Tambah Data</a>
-        </div>
-        <div class="tombollogin ml-auto">
-          <a class="nav-item nav-link btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
-              </div>
-              <div class="modal-body">
-                <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Username</label>
-                  <input type="text" class="form-control" id="username">
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Password</label>
-                  <input type="text" class="form-control"id="password"></input>
-                </div>
-                </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Login</button>
-                </div>
-              </div>
-            </div>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Log Out
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log Out</h5>
       </div>
+      <div class="modal-body">
+        Apakah anda yakin akan logout?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+        <button type="button" class="btn btn-primary">Ya</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </nav>
     <!-- Akhir Header Navbar -->
 
