@@ -6,7 +6,7 @@ class Pages extends BaseController
 {
     public function index()
     {
-        echo view('pages/home');
+        echo view('pages/crud');
     }
 
     public function home()
@@ -20,6 +20,10 @@ class Pages extends BaseController
     }
     
     public function login(){
+
+    }
+
+    public function crud(){
 
     }
 }

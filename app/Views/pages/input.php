@@ -71,6 +71,11 @@
                 </div>
             </div>
         </form>
+        
+        <div class="modal-footer">
+            <button type="button" class="btn-secondary">Hapus Perubahan</button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+        </div>
         <!-- <div class="tulisan">
             <h3>Input Berkas</h3>
         </div>

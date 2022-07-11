@@ -1,4 +1,4 @@
-CSS Code
+/* CSS Code */
 
 /* Basic Code */
 body {
@@ -111,4 +111,23 @@ header {
     position: relative;
     width: 100%;
     margin-left: 50px;
+}
+
+.modal-footer{
+    margin-top: 50px;
+}
+
+.modal-footer .btn-secondary{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.modal-footer .btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
 }
