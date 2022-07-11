@@ -14,8 +14,7 @@ class Pages extends BaseController
         
     }
 
-    public function caripengguna()
-    {
+    public function caripengguna(){
         
     }
     
