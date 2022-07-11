@@ -1,9 +1,9 @@
-/* CSS Code */
+/* CSS CODE */
 
 /* Basic Code */
 
 * {
-    background-color: #F4F5F9;
+    /* background-color: #F4F5F9; */
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 
 .hero .container {
     height: 300px;
-    background-color: #03428B;
+    background-color: #03428B; !important
 }
 
 .headingInfo {
@@ -111,18 +111,16 @@ body {
 }
 
 .kolomHasilCari {
-    margin-top: 2%
+    margin-top: 2%;
 }
 
-.atas {
-    background-color: #03428B;
-}
-
-.atas th {
+.table .atas th {
     color: white;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.003em;
+    background-color: #03428B;
+    text-align: center;
 }
 
 
@@ -254,6 +252,7 @@ body {
         background: rgba(255, 255, 255, 0.84);
         height: 182px;
         margin-top: -7%;
+        z-index: 1;
     }
 
     .form-control {
@@ -305,13 +304,10 @@ body {
         color: #03428B;
     }
 
-    .atas th {
+    .table .atas th {
         color: white;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.003em;
     }
 }
-
-
-
