@@ -6,159 +6,118 @@ body {
     background-color: #F4F5F9;
 }
 
-nav{
-    background-color: rgba(244, 245, 249, 1);
-    display: flex;
-    justify-content:space-between;
-}
+/* Navbar */
 
 .navbar {
     height: 80px;
 }
 
 .navbar-brand {
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 0px;
     margin-bottom: 25px;
+    width: 30px;
+    height: auto;
 }
 
-.tombollogin .btn{
-    /* background-color: #03428B;
-    width: auto; */
-    font-family: "Roboto", sans-serif;
-    display: inline-block;
-    background: rgba(3, 66, 139, 1);
-    border-radius: 5px;
-    margin: 20%;
-    /* padding: 10.5px 14px 13px 15px;
-    margin-right: 95px; */
-    width: 97px;
-    height: 40px;
-    /* gap: 10px;
-    font-weight: 500; */
+.tombollogin {
+    margin-right: 20px;
+}
+
+/* Hero */
+
+.hero .container {
+    height: 300px;
+    background-color: #03428B; !important
+}
+
+.headingInfo {
+    color: white;
+    padding-left: 30px;
+    padding-top: 90px;
     font-size: 14px;
-    line-height: 14px;
-    text-align: center;
+}
+
+.tulisan {
+    color: white;
+    padding-left: 30px;
+    padding-top: 6px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
     letter-spacing: 0.003em;
 }
 
-/* .btn{
-    float: right;
-    text-decoration: none;
-    color: white;
-    background: #03428B;
-} */
+/* Tablet */
 
-.collapse .btn{
-    float: right;
+@media screen and (min-width: 768px) {
+    /* Navbar */
+
+    .navbar-brand {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .tombollogin {
+        margin-right: 20px;
+    }
+
+    /* Hero */
+
+    .hero .container {
+        width: auto;
+        height: 400px;
+        background-color: #03428B;
+    }
+
+    .headingInfo {
+        color: white;
+        padding-left: 40px;
+    }
+
+    .tulisan {
+        color: white;
+        padding-left: 40px;
+    }
 }
 
-.heder{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+/* Desktop */
 
-header {
-    height: 60px;
-    width: 100%;
-    background-color: rgba(244, 245, 249, 1);
-    position :fixed;
-    z-index: 10;
-}
+@media screen and (min-width: 992px) {
 
-.header-left {
-    float:left;
-}
+    /* Navbar */
+    .navbar-brand {
+        margin-left: 0%;
+    }
 
-.header-left .logo {
-    margin-left: 95px;
-}
+    .tombollogin {
+        margin-right: 0%;
+    }
 
-.header-right {
-    float:right;
-}
+    /* Hero */
 
-.header-right .btn-login {
-    display: inline-block;
-    background: #03428B;
-    border-radius: 5px;
-    padding: 10.5px 14px 13px 15px;
-    margin-right: 95px;
-    width: 97px;
-    height: 40px;
-    gap: 10px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    letter-spacing: 0.003em;
-}
+    .hero .container {
+        width: auto;
+        height: 554px;
+        background-color: #03428B;
+    }
 
-.judul {
-    position: absolute;
-    background: #03428B;
-    margin-top: 60px;;
-    border-radius: 0px;
-    height: 555px;
-    width: 608px;
-    color: white;
-    padding-left: 91px;
-    padding-top: 64px;
-}
+    .headingInfo {
+        color: white;
+        padding-left: 51px;
+    }
 
-.imgMain{
-    float: right;
-    margin-top: 60px;
-    width: 832px;
-    height: 554px;
-}
+    .tulisan {
+        color: white;
+        padding-left: 51px;
+    }
 
-.form-control{
-    /* width: 30%; */
-    border-radius: 5px;
-    height: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-
-.form{
-    color: #03428B;
-    font-size: 14px;
-}
-
-.form p{
-    position: relative;
-}
-
-/* .input{
-    position: absolute;
-} */
-
-.row{
-    position: relative;
-    width: 100%;
-    margin-left: 50px;
-}
-
-.modal-footer{
-    margin-top: 50px;
-}
-
-.modal-footer .btn-secondary{
-    border-radius: 5px;
-    padding: 10px;
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
-.modal-footer .btn{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 10px;
+    .gambarMain {
+        width: 102.5%;
+        height: 554px;
+        z-index: 2;
+    }
 }
