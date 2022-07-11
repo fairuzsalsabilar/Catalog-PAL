@@ -172,18 +172,10 @@ footer{
 }
 
 .tombollogin .btn{
-    /* background-color: #03428B;
-    width: auto; */
     font-family: "Roboto", sans-serif;
     display: inline-block;
     background: rgba(3, 66, 139, 1);
     border-radius: 5px;
-    /* padding: 10.5px 14px 13px 15px;
-    margin-right: 95px; */
-    width: 97px;
-    height: 40px;
-    /* gap: 10px;
-    font-weight: 500; */
     font-size: 14px;
     line-height: 14px;
     text-align: center;
