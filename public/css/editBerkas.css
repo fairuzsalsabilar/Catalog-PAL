@@ -24,31 +24,26 @@ body {
     margin-right: 20px;
 }
 
-/* Hero */
-
-.hero .container {
-    height: 300px;
-    background-color: #03428B; !important
+/* Heading */
+.cheading {
+    width: 100%;
+    height: 90px;
+    background-color: #03428B;
+    position: relative;
 }
 
-.headingInfo {
-    color: white;
-    padding-left: 30px;
-    padding-top: 90px;
-    font-size: 14px;
-}
-
-.tulisan {
-    color: white;
-    padding-left: 30px;
-    padding-top: 6px;
+.cheading .heading {
     position: absolute;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 24px;
     line-height: 50px;
     letter-spacing: 0.003em;
+    color: white;
+    margin-top: 5%;
+    margin-left: 28%;
 }
+
 
 /* Inputan */
 
@@ -65,7 +60,7 @@ body {
     font-weight: 600;
     font-size: 14px;
     margin-left: 0%;
-    margin-top: 5%;
+    margin-top: 12%;
     line-height: 14px;
     color: #03428B;
 }
@@ -90,7 +85,7 @@ body {
     background-color: #03428B;
     height: 79px;
     position: relative;
-    margin-top: 15%;
+    margin-top: 18%;
 }
 
 .footer .tulisan {
@@ -98,7 +93,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     position: absolute;
-    margin-top: 2%;
+    margin-top: 7%;
 }
 
 /* Tablet */
@@ -115,24 +110,6 @@ body {
 
     .tombollogin {
         margin-right: 20px;
-    }
-
-    /* Hero */
-
-    .hero .container {
-        width: auto;
-        height: 400px;
-        background-color: #03428B;
-    }
-
-    .headingInfo {
-        color: white;
-        padding-left: 40px;
-    }
-
-    .tulisan {
-        color: white;
-        padding-left: 40px;
     }
 
     /* Inputan */
@@ -156,6 +133,12 @@ body {
         margin-bottom: 10%;
     }
 
+    /* Heading */
+    .cheading .heading {
+        margin-top: 3%;
+        margin-left: 40%;
+    }
+
     /* Footer */
     .footer {
         background-color: #03428B;
@@ -169,7 +152,7 @@ body {
         font-size: 16px;
         font-weight: 400;
         position: absolute;
-        margin-top: 1%;
+        margin-top: 3.5%;
     }
 }
 
@@ -184,30 +167,6 @@ body {
 
     .tombollogin {
         margin-right: 0%;
-    }
-
-    /* Hero */
-
-    .hero .container {
-        width: auto;
-        height: 554px;
-        background-color: #03428B;
-    }
-
-    .headingInfo {
-        color: white;
-        padding-left: 51px;
-    }
-
-    .tulisan {
-        color: white;
-        padding-left: 51px;
-    }
-
-    .gambarMain {
-        width: 102.5%;
-        height: 554px;
-        z-index: 2;
     }
 
     .inputan .heading p {
@@ -226,12 +185,18 @@ body {
         margin-bottom: 10%;
     }
 
+    /* Heading */
+    .cheading .heading {
+        margin-top: 2%;
+        margin-left: 42%;
+    }
+
     /* Footer */
     .footer {
         background-color: #03428B;
         height: 79px;
         position: relative;
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .footer .tulisan {
@@ -239,6 +204,6 @@ body {
         font-size: 16px;
         font-weight: 400;
         position: absolute;
-        margin-top: 0.5%;
+        margin-top: 2%;
     }
 }

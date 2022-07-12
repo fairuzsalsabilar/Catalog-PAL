@@ -130,5 +130,17 @@
     </div>
     <!-- Akhir Input -->
 
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid mb-0 footer">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center tulisan">
+                    <p>Copyright © PT PAL 2022 Powered By SI UB 19</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
 </body>
 </html>

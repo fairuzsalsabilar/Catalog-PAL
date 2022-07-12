@@ -123,6 +123,22 @@ body {
     text-align: center;
 }
 
+/* Footer */
+
+.footer {
+    background-color: #03428B;
+    height: 79px;
+    position: relative;
+    margin-bottom: 0%;
+}
+
+.footer .tulisan {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 2%;
+}
 
 /* Tablet */
 
@@ -206,6 +222,22 @@ body {
         margin-top: 21%;
         line-height: 14px;
         color: #03428B;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #03428B;
+        height: 79px;
+        position: relative;
+        margin-top: 0%;
+    }
+
+    .footer .tulisan {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 1.1%;
     }
 }
 
@@ -309,5 +341,21 @@ body {
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.003em;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #03428B;
+        height: 79px;
+        position: relative;
+        margin-top: 0%;
+    }
+
+    .footer .tulisan {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 0.6%;
     }
 }

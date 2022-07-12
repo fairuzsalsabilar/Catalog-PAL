@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Berkas</title>
+    <title>Edit Berkas</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/editBerkas.css">
 </head>
 <body>
 
@@ -55,46 +55,31 @@
     </nav>
     <!-- Akhir Header Navbar -->
 
-    <!-- Hero -->
-    <section class="hero" id ="hero">
-        <div class="container mt-4 mx-auto">
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <h6 class="headingInfo">INPUT BERKAS</h6>
-              <p class="tulisan">Buat Berkas<br>Baru</p>
-            </div>
-            <div class="col-12 col-lg-7 d-none d-lg-block">
-              <img src="img/Rectangle.png" class="gambarMain">
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- Akhir Hero -->
+    <!-- Heading -->
+    <div class="container cheading mt-4">
+        <p class="heading">Edit Berkas</p>
+    </div>
+    <!-- Akhir Heading -->
 
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
         <form id="form" method="POST">
           <div class="row">
-            <div class="col-12 heading">
-              <p>Input Berkas</p>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput">Label</p>
+              <p class="labelInput mt-md-5">Label</p>
                 <div class="kolomInput">
                   <input type="text" name="label" class="form-control" placeholder="Masukkan Label">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput mt-sm-4">Reff Kontrak</p>
+              <p class="labelInput mt-sm-4 mt-md-5">Reff Kontrak</p>
                 <div class="kolomInput">
                   <input type="text" name="reff-kontrak" class="form-control" placeholder="Masukkan Reff Kontrak">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput mt-4">Tanggal</p>
+              <p class="labelInput mt-4 mt-md-4">Tanggal</p>
                 <div class="kolomInput">
                   <input type="text" name="tanggal" class="form-control" placeholder="Masukkan Tanggal">
                 </div>
@@ -106,13 +91,13 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput mt-4">Judul Dokumen</p>
+              <p class="labelInput mt-4 mt-md-4">Judul Dokumen</p>
                 <div class="kolomInput">
                   <input type="text" name="judul-dokumen" class="form-control" placeholder="Masukkan Judul Dokumen">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput mt-4">Judul Proyek</p>
+              <p class="labelInput mt-4 mt-md-4">Judul Proyek</p>
                 <div class="kolomInput">
                   <input type="text" name="judul-proyek" class="form-control" placeholder="Masukkan Judul Proyek">
                 </div>
@@ -124,18 +109,6 @@
     <!-- Akhir Inputan -->
 
     <!-- Btn Simpan & Delete -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 mt-5 mb-5 d-flex justify-content-end btnAll">
-          <div class="col-6 col-md-3 btnDelete">
-            <input class="btn btn-outline-primary" type="submit" value="Hapus Perubahan">
-          </div>
-          <div class="col-6 col-md-3 btnSimpan">
-            <input class="btn btn-primary" type="submit" value="Simpan Data">
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="container buttonInput">
       <div class="row ml-0 mr-0 d-flex rowInput">
         <div class="btnBatalSimpan">
@@ -159,6 +132,7 @@
         </div>
     </footer>
     <!-- Akhir Footer -->
+
 
 </body>
 </html>

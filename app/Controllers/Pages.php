@@ -6,7 +6,7 @@ class Pages extends BaseController
 {
     public function index()
     {
-        echo view('pages/crud');
+        echo view('pages/hasilPencarian');
     }
 
     public function home()
