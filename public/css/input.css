@@ -9,6 +9,36 @@ body {
 /* Navbar */
 
 .navbar {
+    height: 50px;
+}
+
+.navbar-brand {
+    margin-left: 0px;
+    margin-bottom: 25px;
+    width: 30px;
+    height: auto;
+}
+
+.navbar-brand img{
+    width: 200px;
+    height: 20px;
+}
+
+.tombollogin {
+    margin-right: 20px;
+    background-color: #03428B;
+    border-radius: 5px;
+    margin-top: -5%;
+}
+
+.tombollogin .nav-link{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+
+}
+
+/* .navbar {
     height: 80px;
 }
 
@@ -22,31 +52,31 @@ body {
 
 .tombollogin {
     margin-right: 20px;
-}
+} */
 
 /* Hero */
 
 .hero .container {
     height: 300px;
-    background-color: #03428B; !important
+    background-color: #03428B;
 }
 
 .headingInfo {
     color: white;
-    padding-left: 30px;
-    padding-top: 90px;
-    font-size: 14px;
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 12px;
 }
 
 .tulisan {
     color: white;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 6px;
     position: absolute;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 30px;
     letter-spacing: 0.003em;
 }
 
@@ -75,27 +105,37 @@ body {
 }
 
 .btnBatalSimpan {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 13%;
+    margin-left: 15%;
+    color: black;
+}
+
+.btnBatalSimpan .btn{
+    color: black;
 }
 
 .btnSimpan {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 13%;
+    margin-left: 2%;
+}
+
+.btnSimpan .btn {
+    background-color: #03428B;
+    color: white;
 }
 
 /* Footer */
 
 .footer {
     background-color: #03428B;
-    height: 79px;
+    height: 61px;
     position: relative;
     margin-top: 15%;
 }
 
 .footer .tulisan {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     position: absolute;
     margin-top: 2%;
@@ -107,14 +147,34 @@ body {
 
     /* Navbar */
 
+    .navbar {
+        height: 50px;
+    }
+    
     .navbar-brand {
-        margin-top: 20px;
         margin-left: 20px;
         margin-bottom: 25px;
+        width: 30px;
+        height: auto;
     }
-
+    
+    .navbar-brand img{
+        width: 230px;
+        height: 20px;
+    }
+    
     .tombollogin {
         margin-right: 20px;
+        background-color: #03428B;
+        border-radius: 5px;
+        margin-top: -3%;
+    }
+    
+    .tombollogin .nav-link{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+    
     }
 
     /* Hero */
@@ -151,8 +211,8 @@ body {
     }
     
     .btnSimpan {
-        margin-top: 10%;
-        margin-left: 3%;
+        margin-top: 13%;
+        margin-left: 2%;
         margin-bottom: 10%;
     }
 
@@ -161,15 +221,17 @@ body {
         background-color: #03428B;
         height: 79px;
         position: relative;
-        margin-top: 31.9%;
+        margin-top: 10%;
     }
 
     .footer .tulisan {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         position: absolute;
         margin-top: 1%;
+        text-align: center;
+        padding-top: 2%;
     }
 }
 
@@ -178,12 +240,33 @@ body {
 @media screen and (min-width: 992px) {
 
     /* Navbar */
+    .navbar {
+        height: 80px;
+    }
+    
     .navbar-brand {
-        margin-left: 0%;
+        margin-top: 17px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        width: 30px;
+        height: auto;
     }
 
+    .navbar-brand img{
+        width: 300px;
+        height: 29px;
+    }
+    
     .tombollogin {
-        margin-right: 0%;
+        margin-right: 20px;
+        margin-top: 1%;
+    }
+
+    .tombollogin .nav-link{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+    
     }
 
     /* Hero */
@@ -216,13 +299,13 @@ body {
     }
 
     .btnBatalSimpan {
-        margin-left: 71%;
         margin-bottom: 10%;
+        margin: 10%;
     }
     
     .btnSimpan {
         margin-top: 10%;
-        margin-left: 1%;
+        margin-left: 2%;
         margin-bottom: 10%;
     }
 
@@ -236,9 +319,9 @@ body {
 
     .footer .tulisan {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         position: absolute;
-        margin-top: 0.5%;
+        margin-top: 0%;
     }
 }

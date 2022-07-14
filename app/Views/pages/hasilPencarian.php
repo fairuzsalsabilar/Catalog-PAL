@@ -19,10 +19,10 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
         <a class="navbar-brand" href="#">
-          <img src="img/logo PAL.png" width="300px" height="29.7px">
+          <img src="img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
-          <a class="nav-item nav-link btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
+          <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
           <div class="modal-dialog">
@@ -76,7 +76,7 @@
                 <button type="button" class="btn btn-primary btn-src">Cari</button>
               </div>
               <div class="kategori">
-                <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Label</a>
+                <a class="btn ml-1 btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Label</a>
                 <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"> <span> Judul </span> Dokumen</button>
                 <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><span> Judul </span> Proyek</a>
                 <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample4">Tahun</button>
@@ -114,7 +114,7 @@
                 <tbody>
                   <tr>
                       <th scope="row"><?php echo $urut++ ?></th>
-                      <td>A1</td>
+                      <td class="idlabel">A1</td>
                       <td>LAPORAN HASIL PENGETESAN/COMMISSIONING PEKERJAAN MEKANIKAL</td>
                       <td>KONSULTAN MK UNTUK PAKET C & KONSTRUKSI PENGAWAS UNTUK PAKET B1,B2,B3 & C</td>
                       <td>INDRA KARYA</td>
