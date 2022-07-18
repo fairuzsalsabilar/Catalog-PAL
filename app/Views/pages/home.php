@@ -19,7 +19,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid navbar">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="input.php">
           <img src="img/logo PAL.png" width="300px" height="29.7px">
         </a>
         <div class="tombollogin">
@@ -189,7 +189,7 @@
   </body>
   <footer>
     <div class="container-fluid footer">
-    <p>Copyright © PT PAL 2022 Powered By SI UB 19</p>
+    <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
     </div>
 </footer>
 </html>

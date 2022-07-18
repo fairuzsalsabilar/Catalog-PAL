@@ -1,0 +1,120 @@
+CRITICAL - 2022-07-14 20:20:22 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:35 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:36 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:36 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:41 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:41 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:20:41 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:27:20 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:27:51 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:29:06 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:29:08 --> Invalid file: pages/input.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/input.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/input', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/input')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-14 20:46:56 --> Invalid file: pages/home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/home.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/home')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

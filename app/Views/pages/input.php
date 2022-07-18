@@ -18,8 +18,8 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo PAL.png" width="300px" height="29.7px">
+        <a class="navbar-brand" href="home.php">
+          <img src="img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
           <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
