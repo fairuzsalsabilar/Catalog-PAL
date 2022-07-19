@@ -18,7 +18,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
-        <a class="navbar-brand" href="home.php">
+        <a class="navbar-brand" href="/home">
           <img src="img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">

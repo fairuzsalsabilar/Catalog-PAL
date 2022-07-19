@@ -19,7 +19,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid navbar">
-        <a class="navbar-brand" href="input.php">
+        <a class="navbar-brand" href="/">
           <img src="img/logo PAL.png" width="300px" height="29.7px">
         </a>
         <div class="tombollogin">
