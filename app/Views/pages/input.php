@@ -22,7 +22,7 @@
           <img src="img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
-          <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
+          <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log Out</a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
           <div class="modal-dialog">
@@ -136,15 +136,13 @@
         </div>
       </div>
     </div> -->
-    <div class="container buttonInput">
-      <div class="row ml-0 mr-0 d-flex rowInput">
+    <div class="buttonInput">
         <div class="btnBatalSimpan">
             <input class="btn btn-outline-danger" type="submit" value="Hapus Perubahan Data">
         </div>
         <div class="btnSimpan">
             <input class="btn" type="submit" value="Simpan Data">
         </div>
-      </div>
     </div>
     <!-- Akhir Btn Simpan & Delete -->
 
@@ -153,7 +151,7 @@
         <div class="container-fluid mb-0 footer">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center tulisan">
-                    <p>Copyright © PT PAL 2022 Powered By SI UB 19</p>
+                    <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
                 </div>
             </div>
         </div>

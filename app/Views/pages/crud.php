@@ -16,13 +16,34 @@
 <body>
     
 <!-- Header Navbar -->
+<!-- <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/BUMN-PAL-R1 1.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+              <button class="btn " type="submit">Log In</button>
+          </div>
+        </div>
+    </nav> -->
 <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
         <a class="navbar-brand" href="/home">
           <img src="img/logo PAL.png" width="300px" height="29.7px">
         </a>
+        <div class="input ml-auto">
+          <a class="btn" href="/input">Input Berkas</a>
+        </div>
         <div class="tombollogin ml-auto">
-          <a class="nav-item nav-link btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
+          <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log Out</a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
           <div class="modal-dialog">
@@ -73,12 +94,12 @@
             <div class="col-10 mx-auto Pencarian">
               <div class="kolomCari d-flex inline-block">
                 <input class="form-control" type="search" placeholder="Ketik pencarian di sini" aria-label="Search">
-                <button type="button" class="btn btn-primary btn-src">Cari</button>
+                <button type="button" class="btn btn-src">Cari</button>
               </div>
               <div class="kategori">
                 <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Label</a>
-                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"> <span> Judul </span> Dokumen</button>
-                <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><span> Judul </span> Proyek</a>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Dokumen</button>
+                <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Proyek</a>
                 <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample4">Tahun</button>
               </div>
             </div>
@@ -129,6 +150,18 @@
       </div>
     </div>
     <!-- Akhir Input -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid mb-0 footer">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center tulisan">
+                    <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
 
 </body>
 </html>

@@ -19,10 +19,10 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
         <a class="navbar-brand" href="#">
-          <img src="img/logo PAL.png" width="300px" height="29.7px">
+          <img src="img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
-          <a class="nav-item nav-link btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
+          <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
           <div class="modal-dialog">
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
-              <p class="labelInput mt-sm-4 mt-md-5">Reff Kontrak</p>
+              <p class="labelInput mt-4 mt-md-5">Reff Kontrak</p>
                 <div class="kolomInput">
                   <input type="text" name="reff-kontrak" class="form-control" placeholder="Masukkan Reff Kontrak">
                 </div>
@@ -112,10 +112,10 @@
     <div class="container buttonInput">
       <div class="row ml-0 mr-0 d-flex rowInput">
         <div class="btnBatalSimpan">
-            <input class="btn btn-outline-primary" type="submit" value="Hapus Perubahan Data">
+            <input class="btn btn-outline-danger" type="submit" value="Hapus Perubahan Data">
         </div>
         <div class="btnSimpan">
-            <input class="btn btn-primary" type="submit" value="Simpan Data">
+            <input class="btn" type="submit" value="Simpan Data">
         </div>
       </div>
     </div>
@@ -126,7 +126,7 @@
         <div class="container-fluid mb-0 footer">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center tulisan">
-                    <p>Copyright © PT PAL 2022 Powered By SI UB 19</p>
+                    <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
                 </div>
             </div>
         </div>

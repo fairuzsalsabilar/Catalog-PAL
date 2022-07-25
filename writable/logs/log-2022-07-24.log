@@ -1,0 +1,10 @@
+CRITICAL - 2022-07-24 19:57:34 --> Invalid file: pages/caripennguna.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/caripennguna.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/caripennguna', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('pages/caripennguna')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

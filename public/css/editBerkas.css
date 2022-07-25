@@ -9,58 +9,61 @@ body {
 /* Navbar */
 
 .navbar {
-    height: 80px;
+    height: 50px;
 }
 
 .navbar-brand {
-    margin-top: 15px;
     margin-left: 0px;
     margin-bottom: 25px;
     width: 30px;
     height: auto;
 }
 
+.navbar-brand img{
+    width: 200px;
+    height: 20px;
+}
+
 .tombollogin {
     margin-right: 20px;
+    background-color: #03428B;
+    border-radius: 5px;
+    margin-top: -5%;
+}
+
+.tombollogin .nav-link{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+
 }
 
 /* Heading */
 .cheading {
     width: 100%;
-    height: 90px;
+    height: 80px;
     background-color: #03428B;
     position: relative;
 }
 
 .cheading .heading {
     position: absolute;
-    height: 50px;
-    font-weight: 500;
     font-size: 24px;
-    line-height: 50px;
-    letter-spacing: 0.003em;
     color: white;
-    margin-top: 5%;
-    margin-left: 28%;
+    margin-top: 4%;
+    margin-left: 35%;
+    text-align: center;
+    justify-content: center;
 }
-
 
 /* Inputan */
 
-.inputan .heading p {
-    font-weight: 600;
-    font-size: 22px;
-    margin-left: 0%;
-    margin-top: 10%;
-    line-height: 14px;
-    color: #03428B;
-}
 
 .labelInput {
     font-weight: 600;
     font-size: 14px;
     margin-left: 0%;
-    margin-top: 12%;
+    margin-top: 8%;
     line-height: 14px;
     color: #03428B;
 }
@@ -70,30 +73,40 @@ body {
 }
 
 .btnBatalSimpan {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 13%;
+    margin-left: 13%;
+    color: black;
+}
+
+.btnBatalSimpan .btn{
+    color: black;
 }
 
 .btnSimpan {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 13%;
+    margin-left: 2%;
+}
+
+.btnSimpan .btn {
+    background-color: #03428B;
+    color: white;
 }
 
 /* Footer */
 
 .footer {
     background-color: #03428B;
-    height: 79px;
+    height: 70px;
     position: relative;
-    margin-top: 18%;
+    margin-top: 20%;
 }
 
 .footer .tulisan {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     position: absolute;
-    margin-top: 7%;
+    margin-top: 6%;
 }
 
 /* Tablet */
@@ -102,14 +115,34 @@ body {
 
     /* Navbar */
 
+    .navbar {
+        height: 50px;
+    }
+    
     .navbar-brand {
-        margin-top: 20px;
         margin-left: 20px;
         margin-bottom: 25px;
+        width: 30px;
+        height: auto;
     }
-
+    
+    .navbar-brand img{
+        width: 230px;
+        height: 20px;
+    }
+    
     .tombollogin {
         margin-right: 20px;
+        background-color: #03428B;
+        border-radius: 5px;
+        margin-top: -3%;
+    }
+    
+    .tombollogin .nav-link{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+    
     }
 
     /* Inputan */
@@ -128,8 +161,8 @@ body {
     }
     
     .btnSimpan {
-        margin-top: 10%;
-        margin-left: 3%;
+        margin-top: 13%;
+        margin-left: 2%;
         margin-bottom: 10%;
     }
 
@@ -144,15 +177,17 @@ body {
         background-color: #03428B;
         height: 79px;
         position: relative;
-        margin-top: 31.9%;
+        margin-top: 10%;
     }
 
     .footer .tulisan {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         position: absolute;
-        margin-top: 3.5%;
+        margin-top: 1%;
+        text-align: center;
+        padding-top: 2%;
     }
 }
 
@@ -161,27 +196,49 @@ body {
 @media screen and (min-width: 992px) {
 
     /* Navbar */
+    .navbar {
+        height: 80px;
+    }
+    
     .navbar-brand {
-        margin-left: 0%;
+        margin-top: 17px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        width: 30px;
+        height: auto;
     }
 
+    .navbar-brand img{
+        width: 300px;
+        height: 29px;
+    }
+    
     .tombollogin {
-        margin-right: 0%;
+        margin-right: 20px;
+        margin-top: 1%;
     }
 
+    .tombollogin .nav-link{
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+    
+    }
+
+/* inputan */
     .inputan .heading p {
         margin-top: 5%;
         margin-bottom: 2%;
     }
 
     .btnBatalSimpan {
-        margin-left: 71%;
         margin-bottom: 10%;
+        margin: 10%;
     }
     
     .btnSimpan {
         margin-top: 10%;
-        margin-left: 1%;
+        margin-left: 2%;
         margin-bottom: 10%;
     }
 
@@ -196,14 +253,14 @@ body {
         background-color: #03428B;
         height: 79px;
         position: relative;
-        margin-top: 0%;
+        margin-top: 3%;
     }
 
     .footer .tulisan {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         position: absolute;
-        margin-top: 2%;
+        margin-top: 0.5%;
     }
 }
