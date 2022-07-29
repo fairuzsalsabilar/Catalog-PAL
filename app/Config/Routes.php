@@ -36,10 +36,20 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
+// $routes->get('/index', 'Pages::index');
+$routes->add('/input', 'Pages::input');
+$routes->add('/editBerkas/(:segment)', 'Pages::editBerkas/$1');
+$routes->post('/update/(:segment)', 'Pages::update/$1');
+// $routes->get('/delete/(:segment)', 'Pages::delete/$1');
+$routes->get('/delete/(:segment)', 'Pages::delete/$1');
+// $routes->delete('/(:num)', 'Pages::delete/$1');
+$routes->post('/save', 'Pages::save');
+// $routes->get('/page', 'Pages::index/$1');
 $routes->get('/home', 'Pages::home');
-$routes->get('/input', 'Pages::input');
-$routes->get('/caripengguna', 'Pages::caripengguna');
-$routes->get('/login', 'Pages::login');
+// $routes->get('/input', 'Pages::input');
+// $routes->post('/pages(:segment)', 'Pages::input/$1');
+// $routes->get('/caripengguna', 'Pages::caripengguna');
+// $routes->get('/login', 'Pages::login');
 $routes->get('/crud', 'Pages::crud');
 
 /*

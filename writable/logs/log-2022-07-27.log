@@ -1,0 +1,339 @@
+ERROR - 2022-07-27 02:00:47 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-07-27 02:00:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `dataex`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Pages.php(36): CodeIgniter\BaseModel->paginate(10, 'dataex')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-27 02:00:52 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-07-27 02:00:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `dataex`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Pages.php(36): CodeIgniter\BaseModel->paginate(10, 'dataex')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-27 02:01:09 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-07-27 02:01:09 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 416.
+ 1 SYSTEMPATH\Database\BaseConnection.php(586): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `dataex`', [], false)
+ 3 SYSTEMPATH\Model.php(550): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1084): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Pages.php(36): CodeIgniter\BaseModel->paginate(10, 'dataex')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 05:16:44 --> Undefined variable $urut
+in APPPATH\Views\pages\caripengguna.php on line 114.
+ 1 APPPATH\Views\pages\caripengguna.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $urut', 'APPPATH\\Views\\pages\\caripengguna.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\caripengguna.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/caripengguna', [], true)
+ 5 APPPATH\Controllers\Pages.php(53): view('pages/caripengguna')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->caripengguna()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-27 08:24:04 --> Unknown column 'id' in 'order clause'
+CRITICAL - 2022-07-27 08:24:04 --> Unknown column 'id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `dataex`
+WHERE `label` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_dokumen` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_proyek` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `penyedia` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `tanggal` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `reff_kontrak` LIKE \'%asda%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `dataex`
+WHERE `label` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_dokumen` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_proyek` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `penyedia` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `tanggal` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `reff_kontrak` LIKE \'%asda%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `dataex`
+WHERE `label` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_dokumen` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `judul_proyek` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `penyedia` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `tanggal` LIKE \'%asda%\' ESCAPE \'!\'
+OR  `reff_kontrak` LIKE \'%asda%\' ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dataex`
+WHERE `label` LIKE :label: ESCAPE \'!\'
+OR  `judul_dokumen` LIKE :judul_dokumen: ESCAPE \'!\'
+OR  `judul_proyek` LIKE :judul_proyek: ESCAPE \'!\'
+OR  `penyedia` LIKE :penyedia: ESCAPE \'!\'
+OR  `tanggal` LIKE :tanggal: ESCAPE \'!\'
+OR  `reff_kontrak` LIKE :reff_kontrak: ESCAPE \'!\'
+ORDER BY `id` ASC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1088): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Pages.php(34): CodeIgniter\BaseModel->paginate(10, 'dataex')
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 08:28:01 -->  route cannot be found while reverse-routing.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 56.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('ROOTPATH\\public')
+ 2 SYSTEMPATH\Common.php(863): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Pages.php(63): redirect('pages/crud')
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->save()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 08:35:55 --> Undefined variable $currentPage
+in APPPATH\Views\pages\crud.php on line 66.
+ 1 APPPATH\Views\pages\crud.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $currentPage', 'APPPATH\\Views\\pages\\crud.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\crud.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/crud', [], true)
+ 5 APPPATH\Controllers\Pages.php(75): view('pages/crud')
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->crud()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-07-27 09:24:12 --> Unknown column 'proyek' in 'where clause'
+CRITICAL - 2022-07-27 09:24:12 --> Unknown column 'proyek' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `dataex`
+WHERE `proyek` = \'test\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `dataex`
+WHERE `proyek` = \'test\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `dataex`
+WHERE `proyek` = \'test\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `dataex`
+WHERE `proyek` = :proyek:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('test', 'proyek', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('judul_proyek', 'judul_proyek', 'test', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Pages.php(62): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->save()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:22:36 --> Undefined array key "label"
+in APPPATH\Views\pages\crud.php on line 72.
+ 1 APPPATH\Views\pages\crud.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Views\\pages\\crud.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\crud.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/crud', [], true)
+ 5 APPPATH\Controllers\Pages.php(38): view('pages/crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:23:43 --> Undefined array key "label"
+in APPPATH\Views\pages\crud.php on line 75.
+ 1 APPPATH\Views\pages\crud.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Views\\pages\\crud.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\crud.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/crud', [], true)
+ 5 APPPATH\Controllers\Pages.php(38): view('pages/crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:30:39 --> Invalid file: /index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/index', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:30:42 --> Invalid file: /index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/index', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:30:43 --> Invalid file: /index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/index', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:30:59 --> Invalid file: /crud.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/crud.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/crud', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('/crud', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:31:00 --> Invalid file: /crud.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/crud.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('/crud', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('/crud', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:31:16 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('C:\\', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 10:31:17 --> Invalid file: /.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('C:\\', [], true)
+ 3 APPPATH\Controllers\Pages.php(38): view('C:\\', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 13:17:06 --> Undefined array key "id_berkas"
+in APPPATH\Views\pages\editBerkas.php on line 67.
+ 1 APPPATH\Views\pages\editBerkas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_berkas"', 'APPPATH\\Views\\pages\\editBerkas.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\editBerkas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/editBerkas', [], true)
+ 5 APPPATH\Controllers\Pages.php(114): view('pages/editBerkas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->editBerkas('5')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 13:18:26 --> Undefined array key "label"
+in APPPATH\Views\pages\editBerkas.php on line 73.
+ 1 APPPATH\Views\pages\editBerkas.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Views\\pages\\editBerkas.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\editBerkas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/editBerkas', [], true)
+ 5 APPPATH\Controllers\Pages.php(114): view('pages/editBerkas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->editBerkas('5')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 13:21:06 --> Undefined array key "id_berkas"
+in APPPATH\Views\pages\editBerkas.php on line 67.
+ 1 APPPATH\Views\pages\editBerkas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_berkas"', 'APPPATH\\Views\\pages\\editBerkas.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pages\\editBerkas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('pages/editBerkas', [], true)
+ 5 APPPATH\Controllers\Pages.php(114): view('pages/editBerkas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->editBerkas('5')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:13:54 --> Undefined array key "label"
+in APPPATH\Controllers\Pages.php on line 124.
+ 1 APPPATH\Controllers\Pages.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Controllers\\Pages.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:15:12 --> CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in C:\xampp\htdocs\Catalog-PAL\system\HTTP\IncomingRequest.php on line 503
+in SYSTEMPATH\HTTP\RequestTrait.php on line 217.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(503): CodeIgniter\HTTP\Request->fetchGlobal('request', 'label', 'reff_kontrak', 'judul_dokumen')
+ 2 APPPATH\Controllers\Pages.php(123): CodeIgniter\HTTP\IncomingRequest->getVar('label', 'reff_kontrak', 'judul_dokumen', 'judul_proyek')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:19:15 --> Undefined array key "label"
+in APPPATH\Controllers\Pages.php on line 127.
+ 1 APPPATH\Controllers\Pages.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Controllers\\Pages.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:20:33 --> Undefined array key "label"
+in APPPATH\Controllers\Pages.php on line 127.
+ 1 APPPATH\Controllers\Pages.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Controllers\\Pages.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:26:13 --> Undefined array key "label"
+in APPPATH\Controllers\Pages.php on line 127.
+ 1 APPPATH\Controllers\Pages.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Controllers\\Pages.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-07-27 14:31:01 --> Undefined array key "label"
+in APPPATH\Controllers\Pages.php on line 127.
+ 1 APPPATH\Controllers\Pages.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "label"', 'APPPATH\\Controllers\\Pages.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Pages->update('9')
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

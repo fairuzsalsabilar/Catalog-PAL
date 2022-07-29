@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="/css/input.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
         <a class="navbar-brand" href="/home">
-          <img src="img/logo PAL.png">
+          <img src="/img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
           <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log Out</a>
@@ -64,7 +64,7 @@
               <p class="tulisan">Buat Berkas<br>Baru</p>
             </div>
             <div class="col-12 col-lg-7 d-none d-lg-block">
-              <img src="img/Rectangle.png" class="gambarMain">
+              <img src="/img/Rectangle.png" class="gambarMain">
             </div>
           </div>
         </div>
@@ -74,7 +74,8 @@
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
-        <form id="form" method="POST">
+        <form id="form" action="/save" method="post">
+          <?= csrf_field(); ?>
           <div class="row">
             <div class="col-12 heading">
               <p>Input Berkas</p>
@@ -84,38 +85,56 @@
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput">Label</p>
                 <div class="kolomInput">
-                  <input type="text" name="label" class="form-control" placeholder="Masukkan Label">
+                  <input type="text" name="label" class="form-control <?= ($validation->hasError('label')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Label" autofocus required>
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('label'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-sm-4">Reff Kontrak</p>
                 <div class="kolomInput">
-                  <input type="text" name="reff-kontrak" class="form-control" placeholder="Masukkan Reff Kontrak">
+                  <input type="text" name="reff_kontrak" class="form-control <?= ($validation->hasError('reff_kontrak')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Reff Kontrak" required>
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('reff_kontrak'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4">Tanggal</p>
                 <div class="kolomInput">
-                  <input type="text" name="tanggal" class="form-control" placeholder="Masukkan Tanggal">
+                  <input type="date" name="tanggal" class="form-control" placeholder="Masukkan Tanggal" required>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4  mt-md-4">Penyedia</p>
                 <div class="kolomInput">
-                  <input type="text" name="penyedia" class="form-control" placeholder="Masukkan Penyedia">
+                  <input type="text" name="penyedia" class="form-control" placeholder="Masukkan Penyedia" required>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4">Judul Dokumen</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul-dokumen" class="form-control" placeholder="Masukkan Judul Dokumen">
+                  <input type="text" name="judul_dokumen" class="form-control <?= ($validation->hasError('judul_dokumen')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Dokumen" required>
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('judul_dokumen'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4">Judul Proyek</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul-proyek" class="form-control" placeholder="Masukkan Judul Proyek">
+                  <input type="text" name="judul_proyek" class="form-control <?= ($validation->hasError('judul_proyek')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Proyek" required>
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('judul_proyek'); ?>
+                  </div>
                 </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="mt-3 d-grid d-md-block">
+                <input class="btn btn-outline-danger" type="reset" value="Hapus Perubahan Data">
+                <button class="btn text-white" type="submit" style="background-color: #03428B;">Simpan Data</button>
+              </div>
             </div>
           </div>
         </form>
@@ -136,14 +155,7 @@
         </div>
       </div>
     </div> -->
-    <div class="buttonInput">
-        <div class="btnBatalSimpan">
-            <input class="btn btn-outline-danger" type="submit" value="Hapus Perubahan Data">
-        </div>
-        <div class="btnSimpan">
-            <input class="btn" type="submit" value="Simpan Data">
-        </div>
-    </div>
+    
     <!-- Akhir Btn Simpan & Delete -->
 
     <!-- Footer -->

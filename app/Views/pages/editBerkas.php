@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/editBerkas.css">
+    <link rel="stylesheet" href="/css/editBerkas.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
         <a class="navbar-brand" href="#">
-          <img src="img/logo PAL.png">
+          <img src="/img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
           <a class="nav-item nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</a>
@@ -64,43 +64,70 @@
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
-        <form id="form" method="POST">
+        <form action="/update/<?= $berkas['id_berkas']; ?>" method="POST">
+          <?= csrf_field();?>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-md-5">Label</p>
                 <div class="kolomInput">
-                  <input type="text" name="label" class="form-control" placeholder="Masukkan Label">
+                  <input type="text" name="label" value="<?= $berkas['label']; ?>" class="form-control <?= ($validation->hasError('label')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Label">
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('label'); ?>
+                  </div>
+                  <input type="text" name="id_berkas" value="<?= $berkas['id_berkas']; ?>" class="form-control" hidden>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-5">Reff Kontrak</p>
                 <div class="kolomInput">
-                  <input type="text" name="reff-kontrak" class="form-control" placeholder="Masukkan Reff Kontrak">
+                  <input type="text" name="reff_kontrak" value="<?= $berkas['reff_kontrak']; ?>" class="form-control <?= ($validation->hasError('reff_kontrak')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Reff Kontrak">
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('reff_kontrak'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Tanggal</p>
                 <div class="kolomInput">
-                  <input type="text" name="tanggal" class="form-control" placeholder="Masukkan Tanggal">
+                  <input id="inputText4" name="tanggal" value="<?= $berkas['tanggal']?>" type="date" class="form-control <?= ($validation->hasError('tanggal')) ? 'is-invalid' : ''; ?>" required>
+                  <!-- <input type="date" name="tanggal" value="<?= $berkas['tanggal']; ?>" class="form-control"> -->
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('tanggal'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4  mt-md-4">Penyedia</p>
                 <div class="kolomInput">
-                  <input type="text" name="penyedia" class="form-control" placeholder="Masukkan Penyedia">
+                  <input type="text" name="penyedia" value="<?= $berkas['penyedia']; ?>" class="form-control <?= ($validation->hasError('penyedia')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Penyedia">
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('penyedia'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Judul Dokumen</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul-dokumen" class="form-control" placeholder="Masukkan Judul Dokumen">
+                  <input type="text" name="judul_dokumen" value="<?= $berkas['judul_dokumen']; ?>" class="form-control <?= ($validation->hasError('judul_dokumen')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Dokumen">
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('judul_dokumen'); ?>
+                  </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Judul Proyek</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul-proyek" class="form-control" placeholder="Masukkan Judul Proyek">
+                  <input type="text" name="judul_proyek" value="<?= $berkas['judul_proyek']; ?>" class="form-control <?= ($validation->hasError('judul_proyek')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Proyek">
+                  <div class="invalid-feedback">
+                    <?= $validation->getError('judul_proyek'); ?>
+                  </div>
                 </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="mt-4 d-grid d-md-block mb-5">
+                <input class="btn btn-outline-danger" type="reset" value="Hapus Perubahan Data">
+                <button class="btn text-white" type="submit" style="background-color: #03428B;">Simpan Data</button>
+              </div>
             </div>
           </div>
         </form>
@@ -109,7 +136,7 @@
     <!-- Akhir Inputan -->
 
     <!-- Btn Simpan & Delete -->
-    <div class="container buttonInput">
+    <!-- <div class="container buttonInput">
       <div class="row ml-0 mr-0 d-flex rowInput">
         <div class="btnBatalSimpan">
             <input class="btn btn-outline-danger" type="submit" value="Hapus Perubahan Data">
@@ -118,7 +145,7 @@
             <input class="btn" type="submit" value="Simpan Data">
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Akhir Btn Simpan & Delete -->
 
     <!-- Footer -->
