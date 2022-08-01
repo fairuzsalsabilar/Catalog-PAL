@@ -71,7 +71,7 @@
       <div class="container col-lg-12 col-md-6 bgMain" style="background-image: url(img/foto-home.jpg);">
         <div class="kotak container h-50 w-50 mb-5 col-md-6">
           <h6 class="ms-2">INFORMASI</h6>
-          <a class="tulisan ms-3">Katalog Berkas<br>PT.PAL Indonesia</a>
+          <p class="tulisan ms-3">Katalog Berkas<br>PT.PAL Indonesia</p>
           <div class="position-relative pt-5">
             <div class="position-absolute top-100 start-100 translate-middle mt-5 btn-cari col-md-6">
               <button type="button" class="btn-search btn-primary btn-lg m-0">

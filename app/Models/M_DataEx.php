@@ -4,7 +4,7 @@ use CodeIgniter\Model;
  
 class M_DataEx extends Model
 {
-    protected $table = 'dataex';
+    protected $table = 'data_catalog';
     protected $primaryKey = 'id_berkas';
     protected $allowedFields = ['id_berkas', 'label', 'judul_dokumen', 'judul_proyek', 
     'penyedia', 'tanggal', 'reff_kontrak'];
@@ -15,7 +15,7 @@ class M_DataEx extends Model
     }
  
     public function search($keyword){
-        $builder = $this->table('dataex');
+        $builder = $this->table('data_catalog');
         $builder->Like('label', $keyword);
         $builder->orLike('judul_dokumen', $keyword);
         $builder->orLike('judul_proyek', $keyword);

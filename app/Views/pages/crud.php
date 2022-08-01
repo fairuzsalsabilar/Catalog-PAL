@@ -95,7 +95,7 @@
                   <?php } ?>
                 </tbody>
               </table>
-              <?= $pager->links('dataex', 'data_catalog_pagination'); ?>
+              <?= $pager->links('data_catalog', 'data_catalog_pagination'); ?>
             </div>
           </div>
         </div>

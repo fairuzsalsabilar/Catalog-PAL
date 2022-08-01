@@ -13,7 +13,7 @@ class Pages extends BaseController
 
     public function index()
     {
-        $currentPage = $this->request->getVar('page_dataex') ? $this->request->getVar('page_dataex') : 
+        $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
         1;
 
         $keyword = $this->request->getVar('keyword');
@@ -31,7 +31,7 @@ class Pages extends BaseController
 
         $data = [
             'title' => 'CRUD Admin',
-            'data' => $dt_catalog->paginate(10, 'dataex'),
+            'data' => $dt_catalog->paginate(10, 'data_catalog'),
             'pager' => $this->Model_DataEX->pager,
             'currentPage' => $currentPage
         ];
@@ -57,30 +57,30 @@ class Pages extends BaseController
 
         //Validasi Form
         if (!$this->validate([
-            // 'label' => 'required|is_unique[dataex.label]',
+            // 'label' => 'required|is_unique[data_catalog.label]',
             'label' => [
-                'rules' => 'required|is_unique[dataex.label]',
+                'rules' => 'required|is_unique[data_catalog.label]',
                 'errors' => [
                     'required' => '{field} Label Harus Terisi!',
                     'is_unique' => '{field} Label Sudah Tersimpan'
                 ]
             ],
             'reff_kontrak' => [
-                'rules' => 'required|is_unique[dataex.reff_kontrak]',
+                'rules' => 'required|is_unique[data_catalog.reff_kontrak]',
                 'errors' => [
                     'required' => '{field} Reff Kontrak Harus Terisi!',
                     'is_unique' => '{field} Reff Kontrak Sudah Tersimpan'
                 ]
             ],
             'judul_dokumen' => [
-                'rules' => 'required|is_unique[dataex.judul_dokumen]',
+                'rules' => 'required|is_unique[data_catalog.judul_dokumen]',
                 'errors' => [
                     'required' => '{field} Judul Dokumen Harus Terisi!',
                     'is_unique' => '{field} Judul Dokumen Sudah Tersimpan'
                 ]
             ],
             'judul_proyek' => [
-                'rules' => 'required|is_unique[dataex.judul_proyek]',
+                'rules' => 'required|is_unique[data_catalog.judul_proyek]',
                 'errors' => [
                     'required' => '{field} Judul Proyek Harus Terisi!',
                     'is_unique' => '{field} Judul Proyek Sudah Tersimpan'
