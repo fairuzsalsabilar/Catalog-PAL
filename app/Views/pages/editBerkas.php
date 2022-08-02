@@ -64,23 +64,23 @@
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
-        <form action="/update/<?= $berkas['id_berkas']; ?>" method="POST">
+        <form action="/update/<?= $berkas['ID_BERKAS']; ?>" method="POST">
           <?= csrf_field();?>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-md-5">Label</p>
                 <div class="kolomInput">
-                  <input type="text" name="label" value="<?= $berkas['label']; ?>" class="form-control <?= ($validation->hasError('label')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Label">
+                  <input type="text" name="label" value="<?= $berkas['LABEL']; ?>" class="form-control <?= ($validation->hasError('label')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Label">
                   <div class="invalid-feedback">
                     <?= $validation->getError('label'); ?>
                   </div>
-                  <input type="text" name="id_berkas" value="<?= $berkas['id_berkas']; ?>" class="form-control" hidden>
+                  <input type="text" name="id_berkas" value="<?= $berkas['ID_BERKAS']; ?>" class="form-control" hidden>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-5">Reff Kontrak</p>
                 <div class="kolomInput">
-                  <input type="text" name="reff_kontrak" value="<?= $berkas['reff_kontrak']; ?>" class="form-control <?= ($validation->hasError('reff_kontrak')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Reff Kontrak">
+                  <input type="text" name="reff_kontrak" value="<?= $berkas['REFF_KONTRAK']; ?>" class="form-control <?= ($validation->hasError('reff_kontrak')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Reff Kontrak">
                   <div class="invalid-feedback">
                     <?= $validation->getError('reff_kontrak'); ?>
                   </div>
@@ -89,8 +89,8 @@
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Tanggal</p>
                 <div class="kolomInput">
-                  <input id="inputText4" name="tanggal" value="<?= $berkas['tanggal']?>" type="date" class="form-control <?= ($validation->hasError('tanggal')) ? 'is-invalid' : ''; ?>" required>
-                  <!-- <input type="date" name="tanggal" value="<?= $berkas['tanggal']; ?>" class="form-control"> -->
+                  <input id="inputText4" name="tanggal" value="<?= $berkas['TANGGAL']?>" type="date" class="form-control <?= ($validation->hasError('tanggal')) ? 'is-invalid' : ''; ?>" required>
+                  <!-- <input type="date" name="tanggal" value="<?= $berkas['TANGGAL']; ?>" class="form-control"> -->
                   <div class="invalid-feedback">
                     <?= $validation->getError('tanggal'); ?>
                   </div>
@@ -99,7 +99,7 @@
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4  mt-md-4">Penyedia</p>
                 <div class="kolomInput">
-                  <input type="text" name="penyedia" value="<?= $berkas['penyedia']; ?>" class="form-control <?= ($validation->hasError('penyedia')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Penyedia">
+                  <input type="text" name="penyedia" value="<?= $berkas['PENYEDIA']; ?>" class="form-control <?= ($validation->hasError('penyedia')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Penyedia">
                   <div class="invalid-feedback">
                     <?= $validation->getError('penyedia'); ?>
                   </div>
@@ -108,7 +108,7 @@
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Judul Dokumen</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul_dokumen" value="<?= $berkas['judul_dokumen']; ?>" class="form-control <?= ($validation->hasError('judul_dokumen')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Dokumen">
+                  <input type="text" name="judul_dokumen" value="<?= $berkas['JUDUL_DOKUMEN']; ?>" class="form-control <?= ($validation->hasError('judul_dokumen')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Dokumen">
                   <div class="invalid-feedback">
                     <?= $validation->getError('judul_dokumen'); ?>
                   </div>
@@ -117,7 +117,7 @@
             <div class="col-12 col-md-6 col-lg-6">
               <p class="labelInput mt-4 mt-md-4">Judul Proyek</p>
                 <div class="kolomInput">
-                  <input type="text" name="judul_proyek" value="<?= $berkas['judul_proyek']; ?>" class="form-control <?= ($validation->hasError('judul_proyek')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Proyek">
+                  <input type="text" name="judul_proyek" value="<?= $berkas['JUDUL_PROYEK']; ?>" class="form-control <?= ($validation->hasError('judul_proyek')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Judul Proyek">
                   <div class="invalid-feedback">
                     <?= $validation->getError('judul_proyek'); ?>
                   </div>

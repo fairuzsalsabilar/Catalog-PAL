@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 class M_DataEx extends Model
 {
     protected $table = 'data_catalog';
-    protected $primaryKey = 'id_berkas';
-    protected $allowedFields = ['id_berkas', 'label', 'judul_dokumen', 'judul_proyek', 
-    'penyedia', 'tanggal', 'reff_kontrak'];
+    protected $primaryKey = 'ID_BERKAS';
+    protected $allowedFields = ['ID_BERKAS', 'LABEL', 'JUDUL_DOKUMEN', 'JUDUL_PROYEK', 
+    'PENYEDIA', 'TANGGAL', 'REFF_KONTRAK'];
  
     public function getAllData()
     {
@@ -16,12 +16,12 @@ class M_DataEx extends Model
  
     public function search($keyword){
         $builder = $this->table('data_catalog');
-        $builder->Like('label', $keyword);
-        $builder->orLike('judul_dokumen', $keyword);
-        $builder->orLike('judul_proyek', $keyword);
-        $builder->orLike('penyedia', $keyword);
-        $builder->orLike('tanggal', $keyword); 
-        $builder->orLike('reff_kontrak', $keyword);
+        $builder->Like('LABEL', $keyword);
+        $builder->orLike('JUDUL_DOKUMEN', $keyword);
+        $builder->orLike('JUDUL_PROYEK', $keyword);
+        $builder->orLike('PENYEDIA', $keyword);
+        $builder->orLike('TANGGAL', $keyword); 
+        $builder->orLike('REFF_KONTRAK', $keyword);
         // $query = $builder->getWhere['label' => $keyword];
         return $builder;
     }

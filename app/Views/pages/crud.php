@@ -69,20 +69,20 @@
                 ?>
                   <tr>
                       <th scope="row"><?= $no++ ?></th>
-                      <td><?= $x['label'] ?></td>
-                      <td><?= $x['judul_dokumen'] ?></td>
-                      <td><?= $x['judul_proyek'] ?></td>
-                      <td><?= $x['penyedia'] ?></td>
-                      <td><?= $x['tanggal'] ?></td>
-                      <td><?= $x['reff_kontrak'] ?></td>
+                      <td><?= $x['LABEL'] ?></td>
+                      <td><?= $x['JUDUL_DOKUMEN'] ?></td>
+                      <td><?= $x['JUDUL_PROYEK'] ?></td>
+                      <td><?= $x['PENYEDIA'] ?></td>
+                      <td><?= $x['TANGGAL'] ?></td>
+                      <td><?= $x['REFF_KONTRAK'] ?></td>
                       <td scope="row">
                         <div class="btn-group btn-group-sm" role="group" aria-label="Default button group">
-                          <a href="<?= base_url('/editBerkas');?>/<?= $x['id_berkas'];?>">
+                          <a href="<?= base_url('/editBerkas');?>/<?= $x['ID_BERKAS'];?>">
                             <button type="button" class="me-2 btn btn-outline-primary">
                             Edit
                             </button>
                           </a>  
-                          <a href="<?= base_url('/delete');?>/<?= $x['id_berkas']; ?>">
+                          <a href="<?= base_url('/delete');?>/<?= $x['ID_BERKAS']; ?>">
                             <button type="button" class="btn btn-danger">
                             Delete
                             </button>

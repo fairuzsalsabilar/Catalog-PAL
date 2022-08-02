@@ -13,29 +13,7 @@ class Pages extends BaseController
 
     public function index()
     {
-        $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
-        1;
-
-        $keyword = $this->request->getVar('keyword');
-        
-        $kategori = $this->request->getVar('keyword');
-        $proyek = $this->request->getVar('proyek');
-        $tahun = $this->request->getVar('tahun');
-        if($keyword){
-            
-            $dt_catalog = $this->Model_DataEX->search($keyword);
-            
-        } else {
-            $dt_catalog = $this->Model_DataEX;
-        }
-
-        $data = [
-            'title' => 'CRUD Admin',
-            'data' => $dt_catalog->paginate(10, 'data_catalog'),
-            'pager' => $this->Model_DataEX->pager,
-            'currentPage' => $currentPage
-        ];
-        return view('pages/crud', $data);
+        return view('pages/home');
     }
 
     public function home()
@@ -59,28 +37,28 @@ class Pages extends BaseController
         if (!$this->validate([
             // 'label' => 'required|is_unique[data_catalog.label]',
             'label' => [
-                'rules' => 'required|is_unique[data_catalog.label]',
+                'rules' => 'required|is_unique[data_catalog.LABEL]',
                 'errors' => [
                     'required' => '{field} Label Harus Terisi!',
                     'is_unique' => '{field} Label Sudah Tersimpan'
                 ]
             ],
             'reff_kontrak' => [
-                'rules' => 'required|is_unique[data_catalog.reff_kontrak]',
+                'rules' => 'required|is_unique[data_catalog.REFF_KONTRAK]',
                 'errors' => [
                     'required' => '{field} Reff Kontrak Harus Terisi!',
                     'is_unique' => '{field} Reff Kontrak Sudah Tersimpan'
                 ]
             ],
             'judul_dokumen' => [
-                'rules' => 'required|is_unique[data_catalog.judul_dokumen]',
+                'rules' => 'required|is_unique[data_catalog.JUDUL_DOKUMEN]',
                 'errors' => [
                     'required' => '{field} Judul Dokumen Harus Terisi!',
                     'is_unique' => '{field} Judul Dokumen Sudah Tersimpan'
                 ]
             ],
             'judul_proyek' => [
-                'rules' => 'required|is_unique[data_catalog.judul_proyek]',
+                'rules' => 'required|is_unique[data_catalog.JUDUL_PROYEK]',
                 'errors' => [
                     'required' => '{field} Judul Proyek Harus Terisi!',
                     'is_unique' => '{field} Judul Proyek Sudah Tersimpan'
@@ -92,12 +70,12 @@ class Pages extends BaseController
         }
         
         $this->Model_DataEX->save([
-            'label' => $this->request->getVar('label'),
-            'reff_kontrak' => $this->request->getVar('reff_kontrak'),
-            'tanggal' => $this->request->getVar('tanggal'),
-            'penyedia' => $this->request->getVar('penyedia'),
-            'judul_dokumen' => $this->request->getVar('judul_dokumen'),
-            'judul_proyek' => $this->request->getVar('judul_proyek')
+            'LABEL' => $this->request->getVar('label'),
+            'REFF_KONTRAK' => $this->request->getVar('reff_kontrak'),
+            'TANGGAL' => $this->request->getVar('tanggal'),
+            'PENYEDIA' => $this->request->getVar('penyedia'),
+            'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
+            'JUDUL_PROYEK' => $this->request->getVar('judul_proyek')
         ]);
 
         session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
@@ -107,10 +85,11 @@ class Pages extends BaseController
     public function editBerkas($id)
     {
         // session();
+        
         $dt_catalog = $this->Model_DataEX;
         $data = [
             'validation' => \Config\Services::validation(),
-            'berkas' => $dt_catalog->where('id_berkas', $id)->first()
+            'berkas' => $dt_catalog->where('ID_BERKAS', $id)->first()
         ];
 
         return view('pages/editBerkas', $data);
@@ -118,19 +97,81 @@ class Pages extends BaseController
 
     // Proses Update Berkas
     public function update($id){
-
-        $this->Model_DataEX->save([
-            'id_berkas' => $id,
-            'label' => $this->request->getVar('label'),
-            'reff_kontrak' => $this->request->getVar('reff_kontrak'),
-            'tanggal' => $this->request->getVar('tanggal'),
-            'penyedia' => $this->request->getVar('penyedia'),
-            'judul_dokumen' => $this->request->getVar('judul_dokumen'),
-            'judul_proyek' => $this->request->getVar('judul_proyek')
+        //load helper form and URL
+        helper(['form', 'url']);
+         
+        //define validation
+        $validation = $this->validate([
+            'label' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Label Harus Terisi!'
+                ]
+            ],
+            'reff_kontrak' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Reff Kontrak Harus Terisi!'
+                ]
+            ],
+            'judul_dokumen' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Judul Dokumen Harus Terisi!'
+                ]
+            ],
+            'judul_proyek' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Judul Proyek Harus Terisi!'
+                ]
+            ]
         ]);
 
-        session()->setFlashdata('pesan', 'Edit Data Berkas Berhasil.');
-        return redirect()->to('/');
+        if(!$validation) {
+
+            //model initialize
+            $dt_catalog = $this->Model_DataEX;
+
+            //render view with error validation message
+            return view('pages/editBerkas', [
+                'berkas' => $dt_catalog->find($id),
+                'validation' => $this->validator
+            ]);
+
+        } else {
+
+            //model initialize
+            // $postModel = new PostModel();
+            
+            //insert data into database
+            $this->Model_DataEX->update($id, [
+                'LABEL' => $this->request->getPost('label'),
+                'REFF_KONTRAK' => $this->request->getPost('reff_kontrak'),
+                'TANGGAL' => $this->request->getPost('tanggal'),
+                'PENYEDIA' => $this->request->getPost('penyedia'),
+                'JUDUL_DOKUMEN' => $this->request->getPost('judul_dokumen'),
+                'JUDUL_PROYEK' => $this->request->getPost('judul_proyek')
+            ]);
+
+            //flash message
+            session()->setFlashdata('pesan', 'Edit Data Berkas Berhasil.');
+
+            return redirect()->to('/');
+        }
+
+        // $this->Model_DataEX->save([
+            // 'id_berkas' => $id,
+            // 'label' => $this->request->getPost('label'),
+            // 'reff_kontrak' => $this->request->getPost('reff_kontrak'),
+            // 'tanggal' => $this->request->getPost('tanggal'),
+            // 'penyedia' => $this->request->getPost('penyedia'),
+            // 'judul_dokumen' => $this->request->getPost('judul_dokumen'),
+            // 'judul_proyek' => $this->request->getPost('judul_proyek')
+        // ]);
+
+        // session()->setFlashdata('pesan', 'Edit Data Berkas Berhasil.');
+        // return redirect()->to('/');
     }
 
     public function delete($id){
@@ -148,7 +189,29 @@ class Pages extends BaseController
     }
 
     public function crud(){
-        return view('pages/crud');
+        $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
+        1;
+
+        $keyword = $this->request->getVar('keyword');
+        
+        $kategori = $this->request->getVar('keyword');
+        $proyek = $this->request->getVar('proyek');
+        $tahun = $this->request->getVar('tahun');
+        if($keyword){
+            
+            $dt_catalog = $this->Model_DataEX->search($keyword);
+            
+        } else {
+            $dt_catalog = $this->Model_DataEX;
+        }
+
+        $data = [
+            'title' => 'CRUD Admin',
+            'data' => $dt_catalog->paginate(10, 'data_catalog'),
+            'pager' => $this->Model_DataEX->pager,
+            'currentPage' => $currentPage
+        ];
+        return view('pages/crud', $data);
 
     }
 }
