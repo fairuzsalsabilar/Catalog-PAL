@@ -40,20 +40,25 @@
                     <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
                   </div>
                   <div class="modal-body">
-                    <form>
+                    <form action="/login" method="POST">
+                      <?php if(session()->getFlashdata('error')) { ?>
+                        <div class="alert alert danger">
+                          <?php echo session()->getFlashdata('error') ?>
+                        </div>
+                      <?php } ?>
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Username</label>
-                        <input type="text" class="form-control" id="username">
+                        <input type="text" class="form-control" id="inputUsername" name="username">
                       </div>
                       <div class="mb-3">
                         <label for="message-text" class="col-form-label">Password</label>
-                        <input type="text" class="form-control"id="password"></input>
+                        <input type="password" class="form-control" id="inputPassword" name="password"></input>
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" >Login</button>
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" name="login" class="btn btn-primary" value="LOGIN">Login</button>
                   </div>
                 </div>
               </div>
@@ -73,11 +78,6 @@
           <h6 class="ms-2">INFORMASI</h6>
           <p class="tulisan ms-3">Katalog Berkas<br>PT.PAL Indonesia</p>
           <div class="position-relative pt-5">
-            <div class="position-absolute top-100 start-100 translate-middle mt-5 btn-cari col-md-6">
-              <button type="button" class="btn-search btn-primary btn-lg m-0">
-                <img src="/img/search.png" class="" width="26px" height="auto">
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -132,16 +132,18 @@
               Pilih salah satu kategori pencarian lalu masukkan kata kunci</p>
             </div>
             <div class="kolomCari col-md-12 mt-5 pb-3">
+            <form action="" method="get">
               <div class="pilihanKategori">  
-                <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Label</a>
-                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"> <span> Judul </span> Dokumen</button>
-                <a class="btn btn-outline-secondary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"><span> Judul </span> Proyek</a>
-                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample4">Tahun</button>
+              <button class="btn btn-outline-secondary" name="kategori" type="submit">Label</button>
+                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Dokumen</button>
+                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Proyek</button>
+                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Tahun</button>
               </div>
               <div class="carii">
                 <input class="form-control me-2 cari" type="search" placeholder="Ketik pencarian di sini" aria-label="Search">
-                <button type="button" class="btn btn-primary col-2 btn-src">Cari</button>
+                <button type="submit" class="btn btn-primary col-2 btn-src">Cari</button>
               </div>
+            </form>
             </div>
           </div>
         </div>

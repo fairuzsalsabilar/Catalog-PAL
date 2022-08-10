@@ -13,12 +13,28 @@ class Pages extends BaseController
 
     public function index()
     {
-        return view('pages/home');
-    }
+        $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
+        1;
 
-    public function home()
-    {
-        return view('pages/home');
+        $keyword = $this->request->getVar('keyword');
+        
+        $kategori = $this->request->getVar('keyword');
+        $proyek = $this->request->getVar('proyek');
+        $tahun = $this->request->getVar('tahun');
+        if($keyword){
+        
+            $dt_catalog = $this->Model_DataEX->search($keyword);
+            
+        } else {
+            $dt_catalog = $this->Model_DataEX;
+        }
+        $data = [
+            'title' => 'Cari Pengguna',
+            'data' => $dt_catalog->paginate(10, 'data_catalog'),
+            'pager' => $dt_catalog->pager,
+            'currentPage' => $currentPage
+        ];
+        return view('pages/caripengguna', $data);
     }
 
     public function input()
@@ -180,13 +196,30 @@ class Pages extends BaseController
         return redirect()->to('/');
     }
 
-    public function caripengguna(){
-        return view('pages/caripengguna');
-    }
-    
-    public function login(){
-        return view('pages/login');
-    }
+    // public function caripengguna(){
+    //     $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
+    //     1;
+
+    //     $keyword = $this->request->getVar('keyword');
+        
+    //     $kategori = $this->request->getVar('keyword');
+    //     $proyek = $this->request->getVar('proyek');
+    //     $tahun = $this->request->getVar('tahun');
+    //     if($keyword){
+        
+    //         $dt_catalog = $this->Model_DataEX->search($keyword);
+            
+    //     } else {
+    //         $dt_catalog = $this->Model_DataEX;
+    //     }
+    //     $data = [
+    //         'title' => 'Cari Pengguna',
+    //         'data' => $dt_catalog->paginate(10, 'data_catalog'),
+    //         'pager' => $dt_catalog->pager,
+    //         'currentPage' => $currentPage
+    //     ];
+    //     return view('pages/caripengguna', $data);
+    // }
 
     public function crud(){
         $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 

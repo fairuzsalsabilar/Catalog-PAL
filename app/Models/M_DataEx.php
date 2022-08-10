@@ -23,6 +23,7 @@ class M_DataEx extends Model
         $builder->orLike('TANGGAL', $keyword); 
         $builder->orLike('REFF_KONTRAK', $keyword);
         // $query = $builder->getWhere['label' => $keyword];
+
         return $builder;
     }
 }

@@ -51,6 +51,7 @@ $routes->get('/home', 'Pages::home');
 // $routes->get('/caripengguna', 'Pages::caripengguna');
 // $routes->get('/login', 'Pages::login');
 $routes->get('/crud', 'Pages::crud');
+$routes->post('/login', 'Login::login');
 
 /*
  * --------------------------------------------------------------------
