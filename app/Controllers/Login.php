@@ -10,7 +10,7 @@ class Login extends BaseController{
     {
         $this->Model_ModelLogin = new ModelLogin();
     }
-
+    
     public function index(){
         return view('pages/home');
     }
@@ -36,14 +36,10 @@ class Login extends BaseController{
         return view('pages/home');
     }
 
-    // public function saveLogin(){
-    //     // validasi login
-    //     if(!$this -> validate([
-    //         'username' => 'required',
-    //         'password' => 'required'
-    //     ])) {
-    //         $validation = \Config\Services::validation();
-    //         return redirect() -> to('pages/home') -> withInput() -> with('validation'. $validation);
-    //     }
-    // }
+    public function logout(){
+        $session = session();
+        $session->destroy();
+        $session->setFlashdata('pesan', 'Berhasil Logout');
+        return redirect()->to('/');
+    }
 }

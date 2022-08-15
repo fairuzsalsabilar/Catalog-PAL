@@ -33,7 +33,7 @@
               <div class="modal-body ">
                 <form>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" style="background-color: #03428B;">Log Out</button>
+                  <a href="<?php echo site_url('/login')?>"class="btn btn-primary" style="background-color: #03428B;">Log Out</a>
                 </form>
                 </div>
               </div>

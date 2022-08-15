@@ -44,8 +44,7 @@ class Pages extends BaseController
 
         } else {
 
-            $dt_catalog = $this->Model_DataEX->search($keyword);
-
+            $dt_catalog = $this->Model_DataEX;
         }
 
         $data = [
@@ -269,7 +268,7 @@ class Pages extends BaseController
 
         } else {
 
-            $dt_catalog = $this->Model_DataEX->search($keyword);
+            $dt_catalog = $this->Model_DataEX;
 
         }
 

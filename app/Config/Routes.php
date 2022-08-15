@@ -53,6 +53,8 @@ $routes->get('/caripengguna', 'Pages::caripengguna');
 $routes->get('/crud', 'Pages::crud');
 $routes->get('/login', 'Login::login');
 $routes->post('/login', 'Login::login');
+// $routes->get('/search', 'Login::search');
+// $routes->post('/search', 'Login::search');
 
 /*
  * --------------------------------------------------------------------
