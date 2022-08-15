@@ -44,7 +44,7 @@ class Pages extends BaseController
 
         } else {
 
-            $dt_catalog = $this->Model_DataEX;
+            $dt_catalog = $this->Model_DataEX->search($keyword);
 
         }
 
@@ -54,7 +54,7 @@ class Pages extends BaseController
             'pager' => $dt_catalog->pager,
             'currentPage' => $currentPage
         ];
-        
+
         return view('pages/caripengguna', $data);
     }
 
@@ -247,24 +247,39 @@ class Pages extends BaseController
         1;
 
         $keyword = $this->request->getVar('keyword');
-        
-        $kategori = $this->request->getVar('keyword');
+        $kategori = $this->request->getVar('kategori');
         $proyek = $this->request->getVar('proyek');
         $tahun = $this->request->getVar('tahun');
-        if($keyword){
+
+        if($kategori === 'LABEL'){
+        
+            $dt_catalog = $this->Model_DataEX->search_label($keyword);
             
-            $dt_catalog = $this->Model_DataEX->search($keyword);
+        } elseif ($kategori === 'JUDUL_DOKUMEN'){
+
+            $dt_catalog = $this->Model_DataEX->search_jDokumen($keyword);
             
+        } elseif ($kategori === 'JUDUL_PROYEK'){
+
+            $dt_catalog = $this->Model_DataEX->search_jProyek($keyword);
+
+        } elseif ($kategori === 'TANGGAL'){
+
+            $dt_catalog = $this->Model_DataEX->search_tanggal($keyword);
+
         } else {
-            $dt_catalog = $this->Model_DataEX;
+
+            $dt_catalog = $this->Model_DataEX->search($keyword);
+
         }
 
         $data = [
-            'title' => 'CRUD Admin',
+            'title' => 'CRUD',
             'data' => $dt_catalog->paginate(10, 'data_catalog'),
-            'pager' => $this->Model_DataEX->pager,
+            'pager' => $dt_catalog->pager,
             'currentPage' => $currentPage
         ];
+        
         return view('pages/crud', $data);
 
     }

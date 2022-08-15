@@ -18,18 +18,18 @@ class M_DataEx extends Model
         // $query = $builder->get();
     }
  
-    // public function search($keyword){
-    //     $builder = $this->table('data_catalog');
-    //     $builder->Like('LABEL', $keyword);
-    //     $builder->orLike('JUDUL_DOKUMEN', $keyword);
-    //     $builder->orLike('JUDUL_PROYEK', $keyword);
-    //     $builder->orLike('PENYEDIA', $keyword);
-    //     $builder->orLike('TANGGAL', $keyword); 
-    //     $builder->orLike('REFF_KONTRAK', $keyword);
-    //     // $query = $builder->getWhere['label' => $keyword];
+    public function search($keyword){
+        $builder = $this->table('data_catalog');
+        $builder->Like('LABEL', $keyword);
+        $builder->orLike('JUDUL_DOKUMEN', $keyword);
+        $builder->orLike('JUDUL_PROYEK', $keyword);
+        $builder->orLike('PENYEDIA', $keyword);
+        $builder->orLike('TANGGAL', $keyword); 
+        $builder->orLike('REFF_KONTRAK', $keyword);
+        // $query = $builder->getWhere['label' => $keyword];
 
-    //     return $builder;
-    // }
+        return $builder;
+    }
 
     public function search_label($keyword){
         $builder = $this->table('data_catalog');
