@@ -18,7 +18,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container navbar">
-        <a class="navbar-brand" href="/home">
+        <a class="navbar-brand" href="/crud">
           <img src="/img/logo PAL.png">
         </a>
         <div class="tombollogin ml-auto">
@@ -28,23 +28,13 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
+              <h5 class="modal-title" id="pesan">Apakah Anda Yakin Akan Log Out?</h5>
               </div>
-              <div class="modal-body">
+              <div class="modal-body ">
                 <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Username</label>
-                  <input type="text" class="form-control" id="username">
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Password</label>
-                  <input type="text" class="form-control"id="password"></input>
-                </div>
-                </form>
-                </div>
-                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-primary" style="background-color: #03428B;">Log Out</button>
+                </form>
                 </div>
               </div>
             </div>

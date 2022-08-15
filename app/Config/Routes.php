@@ -48,7 +48,7 @@ $routes->post('/save', 'Pages::save');
 $routes->get('/home', 'Pages::home');
 // $routes->get('/input', 'Pages::input');
 // $routes->post('/pages(:segment)', 'Pages::input/$1');
-// $routes->get('/caripengguna', 'Pages::caripengguna');
+$routes->get('/caripengguna', 'Pages::caripengguna');
 // $routes->get('/login', 'Pages::login');
 $routes->get('/crud', 'Pages::crud');
 $routes->get('/login', 'Login::login');

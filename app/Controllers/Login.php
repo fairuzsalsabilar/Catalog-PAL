@@ -28,7 +28,7 @@ class Login extends BaseController{
             session()->set('PASSWORD', $cek[0]['PASSWORD']);
             return redirect()->to('/crud');
         } else {
-            session()->setFlashdata('gagal', 'Username atau Password yang anda masukkan salah');
+            $this->session()->setFlashdata('gagal', 'Username atau Password yang anda masukkan salah');
             return redirect()->to('/login');
         }
     }

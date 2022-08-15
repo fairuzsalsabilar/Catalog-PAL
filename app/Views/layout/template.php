@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/crud">
                 <img src="/img/logo PAL.png" alt="" width="30" height="24">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,27 +27,27 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <div class="" role="group" aria-label="Default button group">
-                            <a href="/input" class="text-white btn border-white" style="background-color: #03428B;">Input Berkas</a>
+                            <a href="/input" class="btn btn-secondary">Input Berkas</a>
                             <a href="#" class="text-white btn border-white" style="background-color: #03428B;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                                 Log Out
                             </a>
                         </div>
                     </li>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="pesan">Apakah Anda Yakin Akan Logout?</h5>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                                    <button type="button" class="btn btn-primary">Ya</button>
-                                </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="pesan">Apakah Anda Yakin Akan Log Out?</h5>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" style="background-color: #03428B;">Log Out</button>
+                </form>
                     </div>
+                  </div>
+                </div>
+              </div>
                 </ul>
             </div>
         </div>

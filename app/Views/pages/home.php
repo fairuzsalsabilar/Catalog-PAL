@@ -33,38 +33,37 @@
                 <button type="button" class="btn text-white border-white" style="background-color: #03428B;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</button>
               </a>
             </li>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
-                  </div>
-                  <div class="modal-body">
-                    <form action='/login' method="POST">
-                      <p>
-                        <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
-                        <div class="alert alert-warning">
-                            <?php echo session()->getFlashdata('gagal') ?>
-                        </div>
-                    <?php } ?>
-                    </p>
-                      <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Username</label>
-                        <input type="text" class="form-control" id="inputUsername" name="username">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" name="password"></input>
-                      </div>
-                    <div class="row justify-content-end">
-                        <button type="submit" class="btn btn-primary col-3">Submit</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
                     </div>
-                    </form>
+                    <div class="modal-body">
+                      <form action='/login' method="POST">
+                        <p>
+                          <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
+                            <div class="alert alert-warning">
+                              <?php echo session()->getFlashdata('gagal') ?>
+                            </div>
+                          <?php } ?>
+                        </p>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Username</label>
+                          <input type="text" class="form-control" id="inputUsername" name="username">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword" name="password"></input>
+                        </div>
+                        <div class="row justify-content-end">
+                          <button type="submit" class="btn btn-primary col-3" style="background-color: #03428B;">Log In</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            
+              </div>     
           </ul>
         </div>
       </div>
@@ -111,8 +110,7 @@
       <div class="elemen col-4 col-2 el3"></div>
       <div class="elemen col-4 col-2 el4 position-relative">
         <div class="position-absolute top-50 start-50 translate-middle">
-          <h1 class="text-center text-white">1.045</h1>
-          <p class="text-center text-white">Data</p>
+          <img src="/img/boat (4).png" class="w-100 h-auto img-fluid">
         </div>
       </div>
       <div class="elemen col-4 col-2 el3"></div>
@@ -164,12 +162,12 @@
         <div class="col-12">
           <div class="row justify-content-center">
             <div class="col-sm col-md col-sm prosedur position-relative">
-              <!-- <div class="atas"></div> -->
+              <div class="atas"></div>
               <div class="logoProsedur">
                 <img src="/img/icon-web.png" alt="">
               </div>
               <h3>WEBSITE</h3>
-              <p>Membuka website terlebih<br>dahulu</p>
+              <p>Membuka website terlebih dahulu</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>1</h3>
               </div>
@@ -177,10 +175,10 @@
             <div class="col-sm col-md col-sm prosedur position-relative">
               <div class="atas"></div>
               <div class="logoProsedur">
-                <img src="/img/icon-web.png" alt="">
+                <img src="/img/icon-search.png" alt="">
               </div>
-              <h3>WEBSITE</h3>
-              <p>Membuka website terlebih<br>dahulu</p>
+              <h3>PENCARIAN</h3>
+              <p>Masuk ke kolom Pencarian</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>2</h3>
               </div>
@@ -188,10 +186,10 @@
             <div class="col-sm col-md col-sm prosedur position-relative">
               <div class="atas"></div>
               <div class="logoProsedur">
-                <img src="img/icon-web.png" alt="">
+                <img src="img/input.png" alt="">
               </div>
-              <h3>WEBSITE</h3>
-              <p>Membuka website terlebih<br>dahulu</p>
+              <h3>INPUT</h3>
+              <p>Masukkan nama berkas yang ingin dicari</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>3</h3>
               </div>
@@ -199,10 +197,10 @@
             <div class="col-sm col-md col-sm prosedur position-relative">
               <div class="atas"></div>
               <div class="logoProsedur">
-                <img src="img/icon-web.png" alt="">
+                <img src="img/output.png" alt="">
               </div>
-              <h3>WEBSITE</h3>
-              <p>Membuka website terlebih<br>dahulu</p>
+              <h3>OUTPUT</h3>
+              <p>Berkas yang dicari akan ditampilkan</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>4</h3>
               </div>

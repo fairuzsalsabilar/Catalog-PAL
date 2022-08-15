@@ -100,7 +100,7 @@ class Pages extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
-        return redirect()->to('/');
+        return redirect()->to('/crud');
     }
 
     public function editBerkas($id)
@@ -178,7 +178,7 @@ class Pages extends BaseController
             //flash message
             session()->setFlashdata('pesan', 'Edit Data Berkas Berhasil.');
 
-            return redirect()->to('/');
+            return redirect()->to('/crud');
         }
 
         // $this->Model_DataEX->save([
@@ -198,7 +198,7 @@ class Pages extends BaseController
     public function delete($id){
         $this->Model_DataEX->delete($id);
         session()->setFlashdata('pesan', 'Data Berhasil Dihapus');
-        return redirect()->to('/');
+        return redirect()->to('/crud');
     }
 
     // public function caripengguna(){
