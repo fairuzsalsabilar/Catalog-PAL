@@ -3,13 +3,14 @@
 use CodeIgniter\Model;
 
 class ModelLogin extends Model{
-    protected $table = "login";
+    protected $table = 'login';
     protected $allowedFields = ['USERNAME', 'PASSWORD'];
 
-    public function login($username){
-        $builder = $this->table('login');
-        $builder->Like('USERNAME', $username);
-        // $query = $builder->getWhere['label' => $keyword];
-        return $builder;
+    public function get_data($username, $password){
+        $this->db->table('login');
+        // $this->db->query("select * from login where USERNAME = 'adminkawasan' and where PASSWORD = 'adminkawasan123'");
+        $data = $this->select()->where('USERNAME',$username)->where('PASSWORD', $password)->get()->getResultArray();
+        return $data;
     }
+    
 }

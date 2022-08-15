@@ -20,7 +20,7 @@
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="/img/logo PAL.png" width="300px" height="29.7px">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,23 +29,25 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page">
                 <button type="button" class="btn text-white border-white" style="background-color: #03428B;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Log In</button>
               </a>
             </li>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
                   </div>
                   <div class="modal-body">
-                    <form action="/login" method="POST">
-                      <?php if(session()->getFlashdata('error')) { ?>
-                        <div class="alert alert danger">
-                          <?php echo session()->getFlashdata('error') ?>
+                    <form action='/login' method="POST">
+                      <p>
+                        <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
+                        <div class="alert alert-warning">
+                            <?php echo session()->getFlashdata('gagal') ?>
                         </div>
-                      <?php } ?>
+                    <?php } ?>
+                    </p>
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Username</label>
                         <input type="text" class="form-control" id="inputUsername" name="username">
@@ -54,20 +56,21 @@
                         <label for="message-text" class="col-form-label">Password</label>
                         <input type="password" class="form-control" id="inputPassword" name="password"></input>
                       </div>
+                    <div class="row justify-content-end">
+                        <button type="submit" class="btn btn-primary col-3">Submit</button>
+                    </div>
                     </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" name="login" class="btn btn-primary" value="LOGIN">Login</button>
                   </div>
                 </div>
               </div>
             </div>
+            
           </ul>
         </div>
       </div>
     </nav>
     <!-- Akhir Header Navbar -->
+
 
     <!-- Main -->
     <div class="container mx-auto row">

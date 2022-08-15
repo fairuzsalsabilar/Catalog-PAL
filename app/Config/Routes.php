@@ -35,7 +35,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Pages::index');
+$routes->get('/', 'Login::index');
 // $routes->get('/index', 'Pages::index');
 $routes->add('/input', 'Pages::input');
 $routes->add('/editBerkas/(:segment)', 'Pages::editBerkas/$1');
@@ -51,6 +51,7 @@ $routes->get('/home', 'Pages::home');
 // $routes->get('/caripengguna', 'Pages::caripengguna');
 // $routes->get('/login', 'Pages::login');
 $routes->get('/crud', 'Pages::crud');
+$routes->get('/login', 'Login::login');
 $routes->post('/login', 'Login::login');
 
 /*

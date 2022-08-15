@@ -37,23 +37,13 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Username</label>
-                                            <input type="text" class="form-control" id="username">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">Password</label>
-                                            <input type="text" class="form-control"id="password"></input>
-                                        </div>
-                                    </form>
+                                    <h5 class="modal-title" id="pesan">Apakah Anda Yakin Akan Logout?</h5>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Login</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                                    <button type="button" class="btn btn-primary">Ya</button>
+                                </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -1,53 +1,49 @@
 <?php namespace App\Controllers;
 
+use App\Models\ModelLogin;
+
 class Login extends BaseController{
+
+    protected $Model_ModelLogin;
+
+    public function __construct()
+    {
+        $this->Model_ModelLogin = new ModelLogin();
+    }
+
+    public function index(){
+        return view('pages/home');
+    }
 
     public function login(){
         $user = new ModelLogin();
-        $username = $this-> request->getVar('username');
-        $password = $this-> request->getVar('password');
-        $login = $ModelLogin -> $login($username);
-        
-        if(!empty($this->request->getPost())){
-            if($login['username']==$username && $login['password']){
-                echo view('pages/login');
-            }else{
-                echo view('pages/crud');
-            }
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+
+        $cek = $user->get_data($username, $password);
+
+        if(!empty($cek)){
+            if($cek[0]['USERNAME']==$username && $cek[0]['PASSWORD']==$password){
+            session()->set('USERNAME', $cek[0]['USERNAME']);
+            session()->set('PASSWORD', $cek[0]['PASSWORD']);
+            return redirect()->to('/crud');
+        } else {
+            session()->setFlashdata('gagal', 'Username atau Password yang anda masukkan salah');
+            return redirect()->to('/login');
         }
     }
 
-    public function save(){
-        // validasi login
-        if(!$this -> validate([
-            'username' => 'required',
-            'password' => 'required'
-        ])) {
-            $validation = \Config\Services::validation();
-            return redirect() -> to('pages/home') -> withInput() -> with('validation'. $validation);
-        }
+        return view('pages/home');
     }
-    // public function index() {
-    //     $ModelLogin = new \App\Models\ModelLogin();
-    //     $login = $this->request->getVar('login');
-    //     if ($login){
-    //         $username = $this->request->getVar('username');
-    //         $password = $this->request->getVar('password');
-            
-    //         $data = $ModelLogin->login($username);
-    //         if ($username == $data['username'] && $password == $data['password']){
-    //             return view ('/pages/crud');
-    //         }
 
-    //         if ($username == '' or $password == '') {
-    //             $err = "Silahkan masukkan username dan password anda";
-    //         }
-
-    //         if ($err){
-    //             session()->setFlashdata('error', $err);
-    //             return redirect()->to("login");
-    //         }
+    // public function saveLogin(){
+    //     // validasi login
+    //     if(!$this -> validate([
+    //         'username' => 'required',
+    //         'password' => 'required'
+    //     ])) {
+    //         $validation = \Config\Services::validation();
+    //         return redirect() -> to('pages/home') -> withInput() -> with('validation'. $validation);
     //     }
-    //     return view('/pages/crud');
     // }
 }

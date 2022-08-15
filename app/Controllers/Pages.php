@@ -13,6 +13,10 @@ class Pages extends BaseController
 
     public function index()
     {
+        return view('pages/home');
+    }
+    
+    public function caripengguna(){
         $currentPage = $this->request->getVar('page_data_catalog') ? $this->request->getVar('page_data_catalog') : 
         1;
 
@@ -35,6 +39,7 @@ class Pages extends BaseController
             'currentPage' => $currentPage
         ];
         return view('pages/caripengguna', $data);
+
     }
 
     public function input()
