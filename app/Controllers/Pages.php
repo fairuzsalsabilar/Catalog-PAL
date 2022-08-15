@@ -22,24 +22,40 @@ class Pages extends BaseController
 
         $keyword = $this->request->getVar('keyword');
         
-        $kategori = $this->request->getVar('keyword');
+        $kategori = $this->request->getVar('kategori');
         $proyek = $this->request->getVar('proyek');
         $tahun = $this->request->getVar('tahun');
-        if($keyword){
+
+        if($kategori === 'LABEL'){
         
-            $dt_catalog = $this->Model_DataEX->search($keyword);
+            $dt_catalog = $this->Model_DataEX->search_label($keyword);
             
+        } elseif ($kategori === 'JUDUL_DOKUMEN'){
+
+            $dt_catalog = $this->Model_DataEX->search_jDokumen($keyword);
+            
+        } elseif ($kategori === 'JUDUL_PROYEK'){
+
+            $dt_catalog = $this->Model_DataEX->search_jProyek($keyword);
+
+        } elseif ($kategori === 'TANGGAL'){
+
+            $dt_catalog = $this->Model_DataEX->search_tanggal($keyword);
+
         } else {
+
             $dt_catalog = $this->Model_DataEX;
+
         }
+
         $data = [
             'title' => 'Cari Pengguna',
             'data' => $dt_catalog->paginate(10, 'data_catalog'),
             'pager' => $dt_catalog->pager,
             'currentPage' => $currentPage
         ];
+        
         return view('pages/caripengguna', $data);
-
     }
 
     public function input()

@@ -23,10 +23,10 @@
                   <button type="submit" class="btn btn-src">Cari</button>
                 </div>
                 <div class="kategori">
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Label</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Dokumen</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Proyek</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Tahun</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="LABEL" type="submit">Label</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_DOKUMEN" type="submit">Dokumen</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_PROYEK" type="submit">Proyek</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="TANGGAL" type="submit">Tahun</button>
                 </div>
               </form>
             </div>
