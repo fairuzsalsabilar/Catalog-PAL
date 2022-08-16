@@ -120,15 +120,17 @@
                   </div>
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-6">
-              <p class="labelInput mt-4">File Dokumen</p>
-            <div class="kolomInput">
-              <input type="file" name="file" class="form-control"aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-            </div>
-            <div class="invalid-feedback">
-                    <?= $validation->getError('file'); ?>
-                  </div>
-            </div>
+            <form method="post" action="<?= base_url('Pages/save') ?>" enctype="multipart/form-data">
+              <div class="col-12 col-md-8 col-lg-6">
+                <p class="labelInput mt-4">File Dokumen</p>
+              <div class="kolomInput">
+              <input type="file" name="file" class="form-control <?= ($validation->hasError('file')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan File Dokumen" required>
+              <div class="invalid-feedback">
+                      <?= $validation->getError('file'); ?>
+              </div>  
+              </div>
+              </div>
+            </form>
             <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-end">
               <div class="mt-3 d-grid d-md-block">
                 <input class="btn btn-outline-danger" type="reset" value="Hapus Data">

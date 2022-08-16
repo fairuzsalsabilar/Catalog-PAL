@@ -57,6 +57,7 @@ class Pages extends BaseController
         return view('pages/caripengguna', $data);
     }
 
+
     public function input()
     {
         // session();
@@ -99,6 +100,14 @@ class Pages extends BaseController
                     'required' => '{field} Judul Proyek Harus Terisi!',
                     'is_unique' => '{field} Judul Proyek Sudah Tersimpan'
                 ]
+            ],
+            'file' => [
+                'rules' => 'is_unique[data_catalog.FILE]',
+                'errors' => [
+                    'is_unique' => '{field} FILE Sudah Tersimpan',
+                    'mime_in[userfile,application/pdf,application/zip,application/msword,application/x-tar]',
+                    'max_size' => 'Ukuran File Maksimal 10 MB'
+                ]    
             ]
         ])) {
             $validation = \Config\Services::validation();
@@ -188,7 +197,8 @@ class Pages extends BaseController
                 'TANGGAL' => $this->request->getPost('tanggal'),
                 'PENYEDIA' => $this->request->getPost('penyedia'),
                 'JUDUL_DOKUMEN' => $this->request->getPost('judul_dokumen'),
-                'JUDUL_PROYEK' => $this->request->getPost('judul_proyek')
+                'JUDUL_PROYEK' => $this->request->getPost('judul_proyek'),
+                'FILE' => $this->request->getPost('file')
             ]);
 
             //flash message
