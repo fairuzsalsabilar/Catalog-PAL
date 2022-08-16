@@ -37,7 +37,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
+                    <h5 class="modal-title" id="pesan">Masukkan Username dan Password yang sudah terdaftar</h5>
                     </div>
                     <div class="modal-body">
                       <form action='/login' method="POST">
@@ -78,13 +78,13 @@
       <div class="container col-lg-12 col-md-6 bgMain" style="background-image: url(img/foto-home.jpg);">
         <div class="kotak container h-50 w-50 mb-5 col-md-6">
           <h6 class="ms-2">INFORMASI</h6>
-          <p class="tulisan ms-3">Katalog Berkas<br>PT.PAL Indonesia</p>
+          <p class="tulisan ms-3">Katalog Berkas<br>PT. PAL Indonesia</p>
           <div class="position-relative pt-5">
           </div>
         </div>
       </div>
       <div class="btn-cariHome d-flex justify-content-end">
-          <a href="<?php echo site_url('/caripengguna')?>" button type="button" class="btn-search d-flex align-items-center justify-content-center btn-primary btn-lg m-0">
+          <a href="<?php echo site_url('/caripengguna')?>" button type="button" class="btn-search d-flex align-items-center justify-content-center btn-primary btn-lg m-0 rounded border border-2">
             <img src="/img/search.png" class="gbr-cari" width="26px" height="auto">
           </button></a>
         </div>
@@ -130,10 +130,10 @@
         <div class="col-md-6 mt-5">
           <img src="/img/img cari.png" class="w-100 h-auto img-fluid hhh">
         </div>
-        <div class="col-md-6 pt-5 mt-5">
-          <div class="row mt-5">
+        <div class="col-md-6 pt-5 mt-3">
+          <div class="row">
             <div class="penjelasan col-md-12 mt-5 mb-5">
-              <h6 class="">KATALOG PT.PAL Indonesia</h6>
+              <h5 class="">KATALOG PT. PAL Indonesia</h5>
               <a style="font-size: 50px; color: #03428B; font-weight: 500; margin-bottom: 3%; line-height: 70px;">Cari Berkas<br>Kebutuhan Anda</a><br><br>
               <p>Katalog PT. PAL Indonesia merupakan sebuah katalog yang digunakan untuk membantu mencari semua data yang tersedia di PT. PAL Indonesia. Dengan adanya Aplikasi Katalog Dokumen Berbasis Website ini dapat memudahkan para karyawan khususnya Divisi Kawasan untuk menemukan atau mencari dokumen yang dibutuhkan.</p>
             </div>

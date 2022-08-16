@@ -11,7 +11,7 @@
               <p class="tulisan">Berkas Kebutuhan<br>Anda</p>
             </div>
             <div class="col-12 col-lg-7 d-none d-lg-block">
-              <img src="img/Rectangle.png" class="gambarMain">
+              <img src="/img/Rectangle.png" class="gambarMain">
             </div>
           </div>
           <!-- Pencarian -->
@@ -23,10 +23,6 @@
                   <button type="submit" class="btn btn-src">Cari</button>
                 </div>
                 <div class="kategori">
-                  <!-- <button class="btn btn-outline-secondary" name="kategori" value="LABEL" type="radio">Label</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_DOKUMEN" type="radio">Dokumen</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_PROYEK" type="radio">Proyek</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="TANGGAL" type="radio">Tahun</button> -->
                   <div class="btn btn-group-toggle d-flex flex-row justify-content-start" data-toggle="buttons">
                     <label class="btn btn-outline-secondary">
                       <input type="radio" name="kategori" value="LABEL" checked> Label

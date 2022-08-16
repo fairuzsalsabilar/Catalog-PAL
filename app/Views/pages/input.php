@@ -122,7 +122,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <div class="mt-3 d-grid d-md-block">
-                <input class="btn btn-outline-danger" type="reset" value="Hapus Perubahan Data">
+                <input class="btn btn-outline-danger" type="reset" value="Hapus Data">
                 <button class="btn text-white" type="submit" style="background-color: #03428B;">Simpan Data</button>
               </div>
             </div>
