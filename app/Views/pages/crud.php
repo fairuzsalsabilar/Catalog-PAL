@@ -72,6 +72,7 @@
                       <th scope="col">Penyedia</th>
                       <th scope="col">Tanggal</th>
                       <th scope="col">Reff Kontrak</th>
+                      <th scope="col">File</th>
                       <th scope="col">Aksi</th>
                   </tr>
                 </thead>
@@ -89,6 +90,7 @@
                       <td><?= $x['PENYEDIA'] ?></td>
                       <td><?= $x['TANGGAL'] ?></td>
                       <td><?= $x['REFF_KONTRAK'] ?></td>
+                      <td><?= $x['FILE'] ?></td>
                       <td scope="row">
                         <div class="btn-group btn-group-sm" role="group" aria-label="Default button group">
                           <a href="<?= base_url('/editBerkas');?>/<?= $x['ID_BERKAS'];?>">

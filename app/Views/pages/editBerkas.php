@@ -54,7 +54,7 @@
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
-        <form action="/update/<?= $berkas['ID_BERKAS']; ?>" method="POST">
+        <form action="/update/<?= $berkas['ID_BERKAS']; ?>" method="POST" enctype="multipart/form-data">
           <?= csrf_field();?>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
@@ -113,7 +113,16 @@
                   </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
+              <p class="labelInput mt-4">File Dokumen</p>
+            <div class="kolomInput">
+              <input type="file" name="file" value="<?= $berkas['FILE']; ?>" class="form-control <?= ($validation->hasError('file')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan File">
+            </div>
+            <div class="invalid-feedback">
+                    <?= $validation->getError('file'); ?>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-end">
               <div class="mt-4 d-grid d-md-block mb-5">
                 <input class="btn btn-outline-danger" type="reset" value="Hapus Perubahan Data">
                 <button class="btn text-white" type="submit" style="background-color: #03428B;">Simpan Data</button>
@@ -124,19 +133,6 @@
       </div>
     </section>
     <!-- Akhir Inputan -->
-
-    <!-- Btn Simpan & Delete -->
-    <!-- <div class="container buttonInput">
-      <div class="row ml-0 mr-0 d-flex rowInput">
-        <div class="btnBatalSimpan">
-            <input class="btn btn-outline-danger" type="submit" value="Hapus Perubahan Data">
-        </div>
-        <div class="btnSimpan">
-            <input class="btn" type="submit" value="Simpan Data">
-        </div>
-      </div>
-    </div> -->
-    <!-- Akhir Btn Simpan & Delete -->
 
     <!-- Footer -->
     <footer>

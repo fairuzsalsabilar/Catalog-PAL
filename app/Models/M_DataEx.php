@@ -7,7 +7,7 @@ class M_DataEx extends Model
     protected $table = 'data_catalog';
     protected $primaryKey = 'ID_BERKAS';
     protected $allowedFields = ['ID_BERKAS', 'LABEL', 'JUDUL_DOKUMEN', 'JUDUL_PROYEK', 
-    'PENYEDIA', 'TANGGAL', 'REFF_KONTRAK'];
+    'PENYEDIA', 'TANGGAL', 'REFF_KONTRAK', 'FILE'];
  
     public function getAllData()
     {

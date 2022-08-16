@@ -67,6 +67,7 @@
                       <th scope="col">Penyedia</th>
                       <th scope="col">Tanggal</th>
                       <th scope="col">Reff Kontrak</th>
+                      <th scope="col">File</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -83,6 +84,7 @@
                       <td><?= $d['PENYEDIA'] ?></td>
                       <td><?= $d['TANGGAL'] ?></td>
                       <td><?= $d['REFF_KONTRAK'] ?></td>
+                      <td><?= $d['FILE'] ?></td>
                   </tr>
                 <?php } ?>
                 </tbody>

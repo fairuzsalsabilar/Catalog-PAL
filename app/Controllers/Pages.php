@@ -111,7 +111,8 @@ class Pages extends BaseController
             'TANGGAL' => $this->request->getVar('tanggal'),
             'PENYEDIA' => $this->request->getVar('penyedia'),
             'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
-            'JUDUL_PROYEK' => $this->request->getVar('judul_proyek')
+            'JUDUL_PROYEK' => $this->request->getVar('judul_proyek'),
+            'FILE' => $this->request->getVar('file')
         ]);
 
         session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
