@@ -121,7 +121,7 @@ class Pages extends BaseController
             'PENYEDIA' => $this->request->getVar('penyedia'),
             'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
             'JUDUL_PROYEK' => $this->request->getVar('judul_proyek'),
-            'FILE' => $this->request->getVar('file')
+            'FILE' => $this->request->getFile('file')
         ]);
 
         session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
@@ -135,7 +135,8 @@ class Pages extends BaseController
         $dt_catalog = $this->Model_DataEX;
         $data = [
             'validation' => \Config\Services::validation(),
-            'berkas' => $dt_catalog->where('ID_BERKAS', $id)->first()
+            'berkas' => $dt_catalog->where('ID_BERKAS', $id)->first(),
+
         ];
 
         return view('pages/editBerkas', $data);
