@@ -83,6 +83,11 @@
           </div>
         </div>
       </div>
+      <div class="btn-cariHome d-flex justify-content-end">
+          <a href="<?php echo site_url('/caripengguna')?>" button type="button" class="btn-search d-flex align-items-center justify-content-center btn-primary btn-lg m-0">
+            <img src="/img/search.png" class="gbr-cari" width="26px" height="auto">
+          </button></a>
+        </div>
 
       <!-- <div class="kotak">
         <h6>INFORMASI</h6>
@@ -123,28 +128,14 @@
     <div class="container-fluid pencarian">
       <div class="row kotakcari pt-5">
         <div class="col-md-6 mt-5">
-          <img src="/img/img cari.png" class="w-100 h-auto img-fluid">
+          <img src="/img/img cari.png" class="w-100 h-auto img-fluid hhh">
         </div>
         <div class="col-md-6 pt-5 mt-5">
           <div class="row mt-5">
             <div class="penjelasan col-md-12 mt-5 mb-5">
-              <h6 class="">PENCARIAN</h6>
-              <p class="mt-1"><a style="font-size: 30px; color: #03428B; font-weight: 500; margin-bottom: 3%;">Cari Berkas<br>Kebutuhan Anda</a><br><br>
-              Pilih salah satu kategori pencarian lalu masukkan kata kunci</p>
-            </div>
-            <div class="kolomCari col-md-12 mt-5 pb-3">
-            <form action="" method="get">
-              <div class="pilihanKategori">  
-              <button class="btn btn-outline-secondary" name="kategori" type="submit">Label</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Dokumen</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Proyek</button>
-                  <button class="btn btn-outline-secondary" name="kategori" type="submit">Tahun</button>
-              </div>
-              <div class="carii">
-                <input class="form-control me-2 cari" type="search" placeholder="Ketik pencarian di sini" aria-label="Search">
-                <button type="submit" class="btn btn-primary col-2 btn-src">Cari</button>
-              </div>
-            </form>
+              <h6 class="">KATALOG PT.PAL Indonesia</h6>
+              <a style="font-size: 50px; color: #03428B; font-weight: 500; margin-bottom: 3%; line-height: 70px;">Cari Berkas<br>Kebutuhan Anda</a><br><br>
+              <p>Katalog PT. PAL Indonesia merupakan sebuah katalog yang digunakan untuk membantu mencari semua data yang tersedia di PT. PAL Indonesia. Dengan adanya Aplikasi Katalog Dokumen Berbasis Website ini dapat memudahkan para karyawan khususnya Divisi Kawasan untuk menemukan atau mencari dokumen yang dibutuhkan.</p>
             </div>
           </div>
         </div>
@@ -213,9 +204,13 @@
     
 
     <footer>
-      <div class="container-fluid footer">
-      <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
-      </div>
+        <div class="container-fluid mb-0 mt-0 footer">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center tulisan">
+                    <p>Copyright &copy; PT PAL 2022 Powered By SI UB 19</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>

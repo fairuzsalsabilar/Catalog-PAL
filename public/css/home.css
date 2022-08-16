@@ -62,12 +62,14 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.btn-cari {
+.btn-cariHome {
     /* float: right;
     margin-top: 40px; */
-    width:105px; 
-    height:105px;
-    /* position: relative; */
+    width: 150px;
+    height: 105px;
+    position: relative;
+    margin-top: -7%;
+    margin-left: auto;
 }
 
 .btn-search {
@@ -75,8 +77,8 @@ h1,h2,h3,h4,h5,h6 {
     /* position: absolute; */
     width: 105px;
     height: 105px;
-    /* margin-left:-150px;
-    margin-top: 380px; */
+    /* margin-left:-150px; */
+    /* margin-top: 10%; */
 }
 
 .kotak {
@@ -192,30 +194,24 @@ h1,h2,h3,h4,h5,h6 {
 
 .penjelasan p {
     /* margin-top: 3%; */
-    font-size: 14px;
+    font-size: 16px;
     color: #949494;
-}
-
-.carii { /* all kolom cari */
+    line-height: 30px;
     width: 80%;
-    height: auto;
-    margin-top: 8%;
-    position: relative;
-    margin-left: 3%;
 }
 
-.cari { /* kolom ketik */
-    padding: 8%;
+/* .cari { /* kolom ketik */
+    /* padding: 8%;
     position: absolute;
-    width: 95%;
-}
+    width: 80%; */
+/* } */ */
 
-.btn-src { /* botton cari */
-    padding: 4.5%;
+/* .btn-src { /* botton cari */
+    /* padding: 4.5%;
     position: absolute;
-    margin-left: 98%;
+    margin-left: 0%;
     background-color: #03428B;
-}
+} */ */
 
 .kolomCari {
     display: flex;
@@ -230,39 +226,64 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 10%;
 }
 
-.pilihanKategori {
-    display: inline-flex;
-    width: 80%;
-    margin-top: 8%;
-    margin-left: 0%;
-    margin-right: 10%;
-    position: relative;
+.kolomCarii {
+    margin-top: 4%;
+    margin-bottom: auto;
+    height: 86px;
+    margin-left: 3%;
 }
 
-.pilihanKategori .btn {
-    font-size: 100%;
-    margin-left: 5%;
+.kolomCarii .btn{
+    font-size: 14px;
+    background: #03428B;
+    margin-left: 75%; 
+    width: 15%; 
+    height: 86px;
+    color: white;
+    margin-top: 0%;
+}
+
+.kategori {
+    margin-left: 1%;
+}
+
+.kategori .btn {
+    flex-direction: column;
+    width: 60%;
+    margin-right: 3%;
+    margin-top: 1%;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.kategori .btn-active {
+    margin-left: -2%;
+}
+
+/* input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
+.kategori .btn-outline-secondary {
+    color: #03428B;
+    border-color: #03428B;
+}
+
+.kategori .btn-outline-secondary:hover {
+    background-color: #03428B;
+    color: #F4F5F9;
+}
+
+.kategori .btn-outline-secondary:active {
+    background-color: #03428B;
+    color: #F4F5F9;
 }
 
 .pilihanKategori .btn span {
     display: none;
-}
-
-/* Footer */
-
-.footer {
-    width: 100%;
-    height: 79px;
-    background-color: #03428B;
-    position: absolute;
-}
-
-.footer p {
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-top: 6%;
-    margin-left: 12%;
 }
 
 /* Prosedur Pengguna */
@@ -400,11 +421,26 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 1;
 }
 
+/* Footer */
+.footer {
+    background-color: #03428B;
+    height: 62px;
+    position: relative;
+    margin-top: 40%;
+}
+
+.footer .tulisan {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+}
+
 
 
 
 /* DESKTOP VERSION */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
     /* Navbar */ 
 
@@ -519,6 +555,10 @@ h1,h2,h3,h4,h5,h6 {
         margin-top: -120px;
         position: relative;
     }
+
+    .pencarian .hhh {
+        margin-top: 1%;
+    }
     
     .kanan .penjelasan {
         width: 55%;
@@ -529,7 +569,7 @@ h1,h2,h3,h4,h5,h6 {
     .penjelasan h6 {
         position: relative;
         color: rgba(3, 66, 139, 1);
-        margin-top:-100px;
+        margin-top:1%;
     }
     
     .penjelasan a {
@@ -537,22 +577,18 @@ h1,h2,h3,h4,h5,h6 {
         position: relative;
         top: 8px;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 50px;
         line-height: 50px;
         letter-spacing: 0.003em;
         color: rgba(3, 66, 139, 1);
     }
-    
+
     .penjelasan p {
-        position: absolute;
-        width: 455px;
-        height: 20px;
-        top: 145px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.003em;
+        /* margin-top: 3%; */
+        font-size: 16px;
         color: #949494;
+        line-height: 30px;
+        width: 80%;
     }
     
     .kiri{
@@ -565,71 +601,78 @@ h1,h2,h3,h4,h5,h6 {
         
     }
     
-    .kolomCari{
+    .kategori {
+        margin-left: 1%;
+    }
+    
+    .kategori .btn {
+        flex-direction: column;
+        width: 85%;
+        margin-right: 3%;
+        margin-top: 1%;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .kategori .btn-active {
+        margin-left: -2%;
+    }
+    
+    /* input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    } */
+    
+    .kategori .btn-outline-secondary {
+        color: #03428B;
+        border-color: #03428B;
+    }
+    
+    .kategori .btn-outline-secondary:hover {
+        background-color: #03428B;
+        color: #F4F5F9;
+    }
+    
+    .kategori .btn-outline-secondary:active {
+        background-color: #03428B;
+        color: #F4F5F9;
+    }
+
+    .kolomCari {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 10%;
         width: 100%;
-        height: 217px;
+        height: 190px;
         background: rgba(255, 255, 255, 0.84);
         border-radius: 5px;
         flex-direction: column;
         position: relative;
+        margin-bottom: 10%;
     }
     
-    .pilihanKategori{
-        margin: 30px;
-       
-    }
-    
-    .pilihanKategori .btn{
-        margin: 6px;
-        width: 126.32px;
-        height: 40px;
-        padding: 8px;
-        gap: 10px;
-        font-size: 14px;
-    }
-    
-    .carii { /* all kolom cari */
-        width: 91%;
-        display: flex;
-        position: relative;
-        color: #03428B;
-    }
-    
-    .cari { /* kolom ketik */
-        position: absolute;
-        width: 85%;
-        padding: 5%;
-        margin-top: -9%;
-    }
-    
-    .btn-src { /* botton cari */
-        padding: 3%;
-        position: absolute;
-        margin-left: 88%;
-        height: 78px;
-        margin-top: -9%;
-        background-color: #03428B;
-    }
-    
-    /* Footer */
-
-    .footer {
+    .form-control {
+        margin-left: 1%;
+        height: 86px;
         width: 100%;
-        height: 79px;
-        background-color: #03428B;
-        position: absolute;
-        margin-top: 7%;
     }
 
-    .footer p {
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin-top: 2%;
-        margin-left: 40%;
+    .kolomCarii {
+        margin-top: 3%;
+        margin-bottom: auto;
+        height: 86px;
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .kolomCarii .btn{
+        margin-top: 0%;
+        margin-bottom: auto;
+        height: 86px;
+        margin-left: 3%;
+        font-size: 16px;
     }
 
     /* Prosedur Pengguna */
@@ -642,7 +685,7 @@ h1,h2,h3,h4,h5,h6 {
         color: #03428B;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         position: relative;
-        margin-top: 60%;
+        margin-top: 55%;
     }
 
     .kotakBawah {
@@ -739,23 +782,6 @@ h1,h2,h3,h4,h5,h6 {
         color: white;
         font-weight: 600;
         font-size: 36px;
-
-        /* width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        background: #03428B;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        margin-left: -25%;
-        margin-top: 23%;
-        color: white;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 28px;
-        position: absolute;
-        z-index: 1; */
     }
 
     .angka3 {
@@ -794,6 +820,21 @@ h1,h2,h3,h4,h5,h6 {
         line-height: 28px;
         position: absolute;
         z-index: 1;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #03428B;
+        height: 91px;
+        position: relative;
+        padding-top: 1%;
+    }
+
+    .footer .tulisan {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
     }
     
 }
@@ -842,6 +883,27 @@ h1,h2,h3,h4,h5,h6 {
 
     .kolomCari {
         padding-bottom: 20px;
+    }
+
+    .form-control {
+        margin-left: 1%;
+        height: 86px;
+        width: 100%;
+    }
+
+    .kolomCarii {
+        margin-top: 3%;
+        margin-bottom: auto;
+        height: 70px;
+        width: 60%;
+        margin-left: 2%;
+    }
+
+    .kolomCarii .btn{
+        margin-top: 0%;
+        margin-bottom: auto;
+        height: 86px;
+        margin-left: 3%;
     }
 
     .angka1 {

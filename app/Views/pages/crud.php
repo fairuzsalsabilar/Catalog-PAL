@@ -29,10 +29,24 @@
                   <button type="submit" class="btn btn-src">Cari</button>
                 </div>
                 <div class="kategori">
-                  <button class="btn btn-outline-secondary" name="kategori" value="LABEL" type="submit">Label</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_DOKUMEN" type="submit">Dokumen</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_PROYEK" type="submit">Proyek</button>
-                  <button class="btn btn-outline-secondary" name="kategori" value="TANGGAL" type="submit">Tahun</button>
+                  <!-- <button class="btn btn-outline-secondary" name="kategori" value="LABEL" type="radio">Label</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_DOKUMEN" type="radio">Dokumen</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="JUDUL_PROYEK" type="radio">Proyek</button>
+                  <button class="btn btn-outline-secondary" name="kategori" value="TANGGAL" type="radio">Tahun</button> -->
+                  <div class="btn btn-group-toggle d-flex flex-row justify-content-start" data-toggle="buttons">
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="kategori" value="LABEL" checked> Label
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="kategori" value="JUDUL_DOKUMEN"> Dokumen
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="kategori" value="JUDUL_PROYEK"> Proyek
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                      <input type="radio" name="kategori" value="TANGGAL"> Tahun
+                    </label>
+                  </div>
                 </div>
               </form>
             </div>
@@ -103,4 +117,3 @@
     </div>
     <!-- Akhir Input -->
   <?= $this->endSection(); ?>
-    
