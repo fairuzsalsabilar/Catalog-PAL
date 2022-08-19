@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Berkas</title>
+    <title>Input Dokumen</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -50,8 +50,8 @@
         <div class="container mt-4 mx-auto">
           <div class="row">
             <div class="col-12 col-lg-5">
-              <h6 class="headingInfo">INPUT BERKAS</h6>
-              <p class="tulisan">Buat Berkas<br>Baru</p>
+              <h6 class="headingInfo">INPUT DOKUMEN</h6>
+              <p class="tulisan">Buat Dokumen<br>Baru</p>
             </div>
             <div class="col-12 col-lg-7 d-none d-lg-block">
               <img src="/img/Rectangle.png" class="gambarMain">
@@ -68,7 +68,7 @@
           <?= csrf_field(); ?>
           <div class="row">
             <div class="col-12 heading">
-              <p>Input Berkas</p>
+              <p>Input Dokumen</p>
             </div>
           </div>
           <div class="row">

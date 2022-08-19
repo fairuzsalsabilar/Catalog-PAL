@@ -78,7 +78,7 @@
       <div class="container col-lg-12 col-md-6 bgMain" style="background-image: url(img/foto-home.jpg);">
         <div class="kotak container h-50 w-50 mb-5 col-md-6">
           <h6 class="ms-2">INFORMASI</h6>
-          <p class="tulisan ms-3">Katalog Berkas<br>PT. PAL Indonesia</p>
+          <p class="tulisan ms-3">Katalog Dokumen<br>PT. PAL Indonesia</p>
           <div class="position-relative pt-5">
           </div>
         </div>
@@ -134,7 +134,7 @@
           <div class="row">
             <div class="penjelasan col-md-12 mt-5 mb-5">
               <h5 class="">KATALOG PT. PAL Indonesia</h5>
-              <a style="font-size: 50px; color: #03428B; font-weight: 500; margin-bottom: 3%; line-height: 70px;">Cari Berkas<br>Kebutuhan Anda</a><br><br>
+              <a style="font-size: 50px; color: #03428B; font-weight: 500; margin-bottom: 3%; line-height: 70px;">Cari Dokumen<br>Kebutuhan Anda</a><br><br>
               <p>Katalog PT. PAL Indonesia merupakan sebuah katalog yang digunakan untuk membantu mencari semua data yang tersedia di PT. PAL Indonesia. Dengan adanya Aplikasi Katalog Dokumen Berbasis Website ini dapat memudahkan para karyawan khususnya Divisi Kawasan untuk menemukan atau mencari dokumen yang dibutuhkan.</p>
             </div>
           </div>
@@ -180,7 +180,7 @@
                 <img src="img/input.png" alt="">
               </div>
               <h3>INPUT</h3>
-              <p>Masukkan nama berkas yang ingin dicari</p>
+              <p>Masukkan nama dokumen yang ingin dicari</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>3</h3>
               </div>
@@ -191,7 +191,7 @@
                 <img src="img/output.png" alt="">
               </div>
               <h3>OUTPUT</h3>
-              <p>Berkas yang dicari akan ditampilkan</p>
+              <p>Dokumen yang dicari akan ditampilkan</p>
               <div class="angka1 position-absolute bottom-0 start-0">
                 <h3>4</h3>
               </div>

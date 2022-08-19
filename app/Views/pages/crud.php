@@ -13,7 +13,7 @@
                 </div>
               <?php endif; ?>
               <h6 class="headingInfo">DOKUMEN</h6>
-              <p class="tulisan">Berkas Kebutuhan<br>Anda</p>
+              <p class="tulisan">Dokumen Kebutuhan<br>Anda</p>
             </div>
             <div class="col-12 col-lg-7 d-none d-lg-block">
               <img src="/img/Rectangle.png" class="gambarMain">

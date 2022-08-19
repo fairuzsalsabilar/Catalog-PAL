@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Berkas</title>
+    <title>Edit Dokumen</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -47,7 +47,7 @@
 
     <!-- Heading -->
     <div class="container cheading mt-4">
-        <p class="heading">Edit Berkas</p>
+        <p class="heading">Edit Dokumen</p>
     </div>
     <!-- Akhir Heading -->
 

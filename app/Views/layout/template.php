@@ -27,7 +27,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <div class="" role="group" aria-label="Default button group">
-                            <a href="/input" class="btn btn-secondary">Input Berkas</a>
+                            <a href="/input" class="btn btn-secondary">Input Dokumen</a>
                             <a href="#" class="text-white btn border-white" style="background-color: #03428B;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                                 Log Out
                             </a>
