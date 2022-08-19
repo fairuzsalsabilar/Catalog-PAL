@@ -116,8 +116,7 @@
               <div class="col-12 col-md-8 col-lg-6">
                 <p class="labelInput mt-4">File Dokumen</p>
                 <div class="kolomInput">
-                  <input type="file" name="file" class="form-control"aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                  
+                <input type="file" name="file" value="<?= $berkas['FILE']; ?>" class="form-control <?= ($validation->hasError('file')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan File Berkas">
                 <div class="invalid-feedback">
                         <?= $validation->getError('file'); ?>
                 </div>  

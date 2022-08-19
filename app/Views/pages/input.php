@@ -64,7 +64,7 @@
     <!-- Inputan -->
     <section class="inputan" id="inputan">
       <div class="container">
-        <form id="form" action="/save" method="post">
+        <form id="form" action="/save" method="post" enctype="multipart/form-data">
           <?= csrf_field(); ?>
           <div class="row">
             <div class="col-12 heading">
@@ -120,17 +120,15 @@
                   </div>
                 </div>
             </div>
-            <form method="post" action="<?= base_url('Pages/save') ?>" enctype="multipart/form-data">
               <div class="col-12 col-md-8 col-lg-6">
                 <p class="labelInput mt-4">File Dokumen</p>
-              <div class="kolomInput">
-              <input type="file" name="file" class="form-control <?= ($validation->hasError('file')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan File Dokumen" required>
-              <div class="invalid-feedback">
-                      <?= $validation->getError('file'); ?>
-              </div>  
+                <div class="kolomInput">
+                <input type="file" name="file" class="form-control <?= ($validation->hasError('file')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan File Dokumen" required>
+                  <div class="invalid-feedback">
+                          <?= $validation->getError('file'); ?>
+                  </div>  
+                </div>
               </div>
-              </div>
-            </form>
             <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-end">
               <div class="mt-3 d-grid d-md-block">
                 <input class="btn btn-outline-danger" type="reset" value="Hapus Data">

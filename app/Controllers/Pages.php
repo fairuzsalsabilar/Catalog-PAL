@@ -100,32 +100,61 @@ class Pages extends BaseController
                     'required' => '{field} Judul Proyek Harus Terisi!',
                     'is_unique' => '{field} Judul Proyek Sudah Tersimpan'
                 ]
-            ],
-            'file' => [
-                'rules' => 'is_unique[data_catalog.FILE]',
-                'errors' => [
-                    'is_unique' => '{field} FILE Sudah Tersimpan',
-                    'mime_in[userfile,application/pdf,application/zip,application/msword,application/x-tar]',
-                    'max_size' => 'Ukuran File Maksimal 10 MB'
-                ]    
             ]
+            // 'file' => [
+            //     'rules' => 'max_size[data_catalog.FILE,10024]|is_unique[data_catalog.FILE]|ext_in[data_catalog.FILE,pdf,docx]',
+            //     'errors' => [
+            //         'is_unique' => '{field} FILE Sudah Tersimpan',
+            //         'ext_in' => "Format tidak didukung",
+            //         'max_size' => 'Ukuran File Maksimal 10 MB'
+            //     ]    
+            // ]
         ])) {
             $validation = \Config\Services::validation();
             return redirect()->to('/input')->withInput()->with('validation', $validation);
         }
-        
-        $this->Model_DataEX->save([
-            'LABEL' => $this->request->getVar('label'),
-            'REFF_KONTRAK' => $this->request->getVar('reff_kontrak'),
-            'TANGGAL' => $this->request->getVar('tanggal'),
-            'PENYEDIA' => $this->request->getVar('penyedia'),
-            'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
-            'JUDUL_PROYEK' => $this->request->getVar('judul_proyek'),
-            'FILE' => $this->request->getFile('file')
-        ]);
+        $file = $this->request->getFile('file');
+        $nama = $this->upload($file, $this->request->getVar('judul_dokumen'));
+        if($nama!=null){
+            $this->Model_DataEX->save([
+                'LABEL' => $this->request->getVar('label'),
+                'REFF_KONTRAK' => $this->request->getVar('reff_kontrak'),
+                'TANGGAL' => $this->request->getVar('tanggal'),
+                'PENYEDIA' => $this->request->getVar('penyedia'),
+                'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
+                'JUDUL_PROYEK' => $this->request->getVar('judul_proyek'),
+                'FILE' => $nama
+            ]);
 
-        session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
-        return redirect()->to('/crud');
+            session()->setFlashdata('pesan', 'Data Telah Tersimpan.');
+            return redirect()->to('/crud');
+            }
+        else{
+            session()->setFlashdata('pesan', 'Data Gagal Tersimpan.');
+            return redirect()->to('/crud');
+        }
+    }
+
+    public function upload($files, $nama)
+    {
+        $file = $files;
+        $ext = $file->getClientExtension();// Mengetahui extensi File
+        
+        helper('filesystem'); // Load Helper File System
+        $direktori = ROOTPATH.'public/upload'; //definisikan direktori upload
+        $namabaru = $nama.'.'.$ext; //definisikan nama fiel yang baru
+        $map = directory_map($direktori, FALSE, TRUE); // List direktori
+
+        /* Cek File apakah ada */
+        foreach ($map as $key) {
+            if ($key == $namabaru){
+                delete_files($direktori,$namabaru);
+            }
+        } //Hapus terlebih dahulu jika file ada
+        $path = $file->move($direktori, $namabaru);
+        if ($path) {
+            return $namabaru;
+        }
     }
 
     public function editBerkas($id)
@@ -192,20 +221,41 @@ class Pages extends BaseController
             // $postModel = new PostModel();
             
             //insert data into database
-            $this->Model_DataEX->update($id, [
-                'LABEL' => $this->request->getPost('label'),
-                'REFF_KONTRAK' => $this->request->getPost('reff_kontrak'),
-                'TANGGAL' => $this->request->getPost('tanggal'),
-                'PENYEDIA' => $this->request->getPost('penyedia'),
-                'JUDUL_DOKUMEN' => $this->request->getPost('judul_dokumen'),
-                'JUDUL_PROYEK' => $this->request->getPost('judul_proyek'),
-                'FILE' => $this->request->getPost('file')
-            ]);
-
-            //flash message
-            session()->setFlashdata('pesan', 'Edit Data Berkas Berhasil.');
-
-            return redirect()->to('/crud');
+            if($this->request->getFile('file')==NULL){
+                $this->Model_DataEX->update($id, [
+                    'LABEL' => $this->request->getPost('label'),
+                    'REFF_KONTRAK' => $this->request->getPost('reff_kontrak'),
+                    'TANGGAL' => $this->request->getPost('tanggal'),
+                    'PENYEDIA' => $this->request->getPost('penyedia'),
+                    'JUDUL_DOKUMEN' => $this->request->getPost('judul_dokumen'),
+                    'JUDUL_PROYEK' => $this->request->getPost('judul_proyek')
+                ]);
+                session()->setFlashdata('pesan', 'Data Gagal Diubah.');
+                return redirect()->to('/crud');
+        }
+            else{
+                $file = $this->request->getFile('file');
+                $nama = $this->upload($file, $this->request->getVar('judul_dokumen'));
+                if($nama!=null){
+                    $this->Model_DataEX->update($id, [
+                        'LABEL' => $this->request->getVar('label'),
+                        'REFF_KONTRAK' => $this->request->getVar('reff_kontrak'),
+                        'TANGGAL' => $this->request->getVar('tanggal'),
+                        'PENYEDIA' => $this->request->getVar('penyedia'),
+                        'JUDUL_DOKUMEN' => $this->request->getVar('judul_dokumen'),
+                        'JUDUL_PROYEK' => $this->request->getVar('judul_proyek'),
+                        'FILE' => $nama
+                    ]);
+                    //flash message        
+                    session()->setFlashdata('pesan', 'Data Behasil Diubah.');
+                    return redirect()->to('/crud');
+                    }
+                else{
+                    //flash message
+                    session()->setFlashdata('pesan', 'Data Gagal Diubah.');
+                    return redirect()->to('/crud');
+                }
+            }
         }
 
         // $this->Model_DataEX->save([
